@@ -1,0 +1,556 @@
+:root {
+  font-size: 16px;
+  --royal-blue-light: #404eed;
+  --royal-blue-dark: #3946d4;
+  --white: #FF8C20;
+  --backgroud: #e2e3e9;
+  --roxo: #8C4EE8;
+  --amarelo: #FF8C20;
+  --azul: #25282A;
+  --rosa: #F1068B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
+}
+
+@media screen and (max-width: 780px){
+
+  * {
+  max-width: 100vw;
+  
+  }
+
+}
+
+body {
+--color-background: #F6F4EC;
+--color-text: #25282A;
+background-color: var(--color-background);
+color: var(--color-text);
+}
+
+body.dark-mode {
+--color-background: #25282A;
+--color-text: #F6F4EC;
+}
+
+.menu-light {
+  background-color: #F6F4EC; /* Cor de fundo do modo claro */
+}
+
+.menu-dark {
+  background-color: #25282A; /* Cor de fundo do modo escuro */
+
+}
+
+#topo-logo {
+  width: 150px;
+ 
+}
+
+
+a {
+  color: #FF8C20;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  height: 4.6875rem;
+  padding: 1rem;
+}
+
+#theme-button {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B2987D;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#theme-icon{
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.menu a:hover {
+  background: rgba(57, 70, 212, 0.1);
+}
+
+.btn-menu {
+  display: none;
+}
+
+
+/* menu  mobile */
+
+@media (max-width: 780px) {
+
+  #header {
+      padding-right: 40px;
+      justify-content: space-between;
+      position: fixed;
+  }
+
+  #topo-logo {
+      margin-left: 15px;
+      width: 100px;
+    }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: var(--royal-blue-light);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    font-size: 20px;
+    color: #F6F4EC;
+  }
+
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  #theme-button {
+    margin-top: 4px;
+  }
+
+  .nav {
+      margin-right: 15px;
+  }
+
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .nav.active .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+}
+
+/* fim menu */
+
+
+
+
+:root {
+    --cor-fundo: #F6F4EC;
+    --cor-1: #FF8C20;
+    --cor-2: #FCB91B;
+    --cor-3: #25282A;
+    --cor-4: #8C4EE8;
+    --cor-5: #F1068B;
+    box-sizing: border-box;
+   
+  }
+  
+  
+  .banner {
+    height: 89vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax-4 {
+    background-image: url("assets/virtual-reality.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .parallax-4 {
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 500px;
+
+}
+  /* Estilizar o título */
+  .titulo {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 27px;
+    font-weight: bolder;
+    color: #8C4EE8;
+  }
+  .banner h2{
+    font-size: 38px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  /* Estilizar o subtítulo */
+  .subtitulo {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 20px;
+    color: #F6F4EC;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+  .subtitulo span {
+    color: #FCB91B;
+    font-size: 39px;
+  }
+  /* Estilizar a citação */
+  .citacao {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 21px;
+    font-style: italic;
+    text-align: left;
+    margin-top: 20px;
+    border-left: 5px solid var(--cor-4);
+    padding-left: 20px;
+    color: #F6F4EC;
+  }
+  
+  /* Estilizar a seção de história */
+  .historia {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 40px;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Estilizar o título da seção */
+  .titulo-secao {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #8C4EE8;
+    padding: 20px 1px;
+  }
+  
+  /* Estilizar o texto da seção */
+  .texto {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 21px;
+    margin-top: 20px;
+    padding: 12px;
+    letter-spacing: 1px;
+    line-height: 26px;
+  }
+  .divisoria {
+    width: 80%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #B2987D;
+   }
+  
+  /* Estilizar a seção de equipe */
+  .equipe {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Estilizar o membro da equipe */
+  .membro {
+    flex: 1;
+    width: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Estilizar a foto do membro da equipe */
+  .foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Estilizar o perfil do membro da equipe */
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  
+  /* Estilizar o nome do membro da equipe */
+  .nome {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Estilizar o cargo do membro da equipe */
+  .cargo {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 780px){
+  
+
+    .banner {
+      padding: 50px;
+      height: 80vh;
+     
+  
+    }
+  
+    .membro {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .perfil {
+      justify-content: center;
+      align-items: center;
+  
+    }
+      .citacao {
+        font-size: 18px;
+        margin-left: 20px;
+        max-width: 100vw;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin-top: 5px;
+      }
+      .subtitulo {
+        margin: 0 auto;
+        max-width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 12px 20px;
+        letter-spacing: 2px;
+        line-height: 26px;
+      }
+      .subtitulo span {
+        font-size: 28px;
+      }
+      .parallax-4 {
+        height: 98vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    
+    }
+    .historia {
+        padding: 15px;
+        letter-spacing: 2px;
+        line-height: 26px;
+        font-size: 20px;
+
+      }
+  
+  }
+
+  /*  rodape */
+    .rodape-parallax5 {
+    margin-top: 40px;  
+    height: 45vh;
+    background-image: url("assets/rodape.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+  }
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: #000000;
+    opacity: 80%;
+}
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+.rodape-conteudo h2 {
+    color: #F6F4EC;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+.rodape-conteudo div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.rodape-conteudo img {
+    width: 18px;
+}
+.rodape-conteudo span {
+    color: #F6F4EC;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+}
+.limite-largura {
+    width: 100%;
+    height: 100%;
+}
+.links-rodape { /* tag <ul> */
+    max-width: 268px;
+    margin: 0 auto;
+    list-style: none;
+}
+.links-rodape a:hover{ /* tag <ul> */
+  color: #F6F4EC;
+}
+.links-rodape li{ 
+ padding: 2px 2px;
+}
+
+.container-rodape {
+  position: relative;
+  padding: 20px 0;
+  line-height: 34px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: #000000;
+  color: #F6F4EC;
+}
+
+.container-rodape span {
+  color: #FF8C20;
+}
+.container-rodape a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 80px;
+  right: 50px;
+
+  background-image: url("assets/seta-para-cima.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+@media(max-width: 780px)
+{
+    .limite-largura {
+        flex-wrap: wrap;
+       
+    }
+    .container-rodape a {
+      z-index: 1000;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: 140px;
+      right: 40px;
+
+    }
+    .links-rodape li a:hover{ 
+      color: #F6F4EC;
+    }
+}

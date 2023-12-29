@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Menu</title>
+    <link rel="stylesheet" href="style-com-javascript.css" />
+    <link rel="stylesheet" href="contato.css" />
+    <script defer src="app.js"></script>
+    <script src="contatoform.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon180.png"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header  id="header"  class="menu-light">
+     <img src="assets/logoclara.png" alt="Logo" id="topo-logo">
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu<span class="hamburger"></span>
+        </button>
+        <!-- <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"
+          >Menu<span class="hamburger"></span
+        ></label> -->
+        <ul class="menu" id="menu" role="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Criação de Sites</a></li>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="portifolio.html">Portifólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+       
+      <button id="theme-button" class="modo-claro" onclick="alterarTema()">
+        <img src="assets/moon.png" alt="Dark Mode" id="theme-icon">
+        <span id="theme-text">Dark</span>
+    </button>
+    </header>
+    <body>
+          <div class="modo-claro">
+            <main>
+              <section class="secao-banner-sobre" id="banner">
+                <div class="titulo-banner-sobre">
+                  <h1>Que tal conversarmos sobre<br> seu projeto</h1>
+                  <div class="contato-convite">
+                    <p>Nossa intenção é te orientar e ajudar no que for possível. 
+                       Considere isso uma consultoria grátis sem nenhum compromisso 
+                      da sua parte. Eu sei exatamente como é ter uma ideia de um 
+                      projeto e não saber exatamente como realizar.</p>
+                  </div>
+                  <h2>Entre em contato e vamos trocar uma ideia!</h2>
+                </div>
+                <div class="container-secao-formulario">
+                  <form id="form" onSubmit="enviarFormulario(event)">
+                    <label class="label-contact">
+                      Nome:
+                    </label>
+                    <input type="text" name="nome" required/>
+
+                    <label class="label-contact">
+                     Email:
+                    </label>
+                    <input type="email" name="email" required/>
+
+                    <label class="label-contact">
+                      Telefone:
+                    </label>
+                    <input class="input-contact" type="tel" name="telefone" required/>
+
+                    <label class="label-contact">
+                      Mensagem:
+                    </label>
+                    <textarea name="mensagem" required></textarea>
+
+                    <input id="buttonEnviar" type="submit" value="Enviar" />
+                  </form>
+                  </div>
+              </section>
+              <section class="container-secao-sobre-nos">
+                <div class="limitar-largura">
+                  <h2>Informações de contato</h2>
+                  <p>
+                    Telefone: (31) 1234-5678<br/>
+                    Email: contato@empresa.com.br<br/>
+                    Endereço: Av. Antônio Carlos, 123, Pampulha, Belo Horizonte, MG
+                  </p>
+                </div>
+              
+              </section>
+              <section class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.154247761178!2d-43.9711776850866!3d-19.865868986646708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69c51bdf8f41d%3A0x97dcbe0f4bfb43b7!2sPampulha%2C%20Belo%20Horizonte%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1637083056576!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+              </section>
+            </main>
+          </div>
+          <footer>
+            <div class="rodape-parallax5"> 
+              <div class="rodape limite-largura">
+                <div  class="rodape-conteudo">
+                  <h2>Links do site</h2>
+                  <div>
+                    <ul class="links-rodape">
+                      <li><a href="index.html">Início</a></li>
+                      <li><a href="servicos.html">Serviços</a></li>
+                      <li><a href="portifolio.html">Portifólio</a></li>
+                      <li><a href="contato.html">Contato</a></li>
+                      <li><a href="sobre.html">Sobre</a></li>
+                    </ul> 
+                  </div>
+                </div>
+                <div class="rodape-conteudo">
+                    <h2>Contato</h2>
+                    <div>
+                        <img src="assets/local.png" title="Ícone local" alt="Ícone local">
+                        <span>Rio de Janeiro, RJ</span>
+                    </div>
+                    <div>
+                        <img src="assets/telefone.png" title="Ícone telefone" alt="Ícone telefone">
+                        <span>Telefone: (21) 9999-9999</span>
+                    </div>
+                    <div>
+                        <img src="assets/email.png" title="Ícone email" alt="Ícone email">
+                        <span>Email: contato@agencia.com.br</span>
+                    </div>
+                </div>
+               
+                <div class="rodape-conteudo">
+                    <h2>Nossas Redes Sociais</h2>
+                    <div>
+                        <img src="assets/fb.png" title="Ícone facebook" alt="Ícone facebook">
+                        <span>/AgenciaGooWin.digital</span>
+                    </div>
+                    <div>
+                        <img src="assets/ig.png" title="Ícone instagram" alt="Ícone instagram">
+                        <span>@AgenciaGooWin.digital</span>
+                    </div>
+                    <div>
+                        <img src="assets/tt.png" title="Ícone twitter" alt="Ícone twitter">
+                        <span>@AgenciaGooWin.digital</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container-rodape"> <!-- Rodapé da página -->
+              <p>&copy; GooWin - Produtora digital - Todos os direitos reservados</p>
+              <p>Desenvolvido por <span>"GooWin.digital"</span></p>
+              <a href="#banner"></a>
+            </div>
+           
+          </footer>
+  </body>
+</html>  

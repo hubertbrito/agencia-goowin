@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Menu</title>
+    <link rel="stylesheet" href="sobre.css" />
+    <script defer src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon180.png"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header  id="header"  class="menu-light">
+     <img src="assets/logoclara.png" alt="Logo" id="topo-logo">
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu<span class="hamburger"></span>
+        </button>
+        <!-- <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"
+          >Menu<span class="hamburger"></span
+        ></label> -->
+        <ul class="menu" id="menu" role="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Criação de Sites</a></li>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="portifolio.html">Portifólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+       
+      <button id="theme-button" class="modo-claro" onclick="alterarTema()">
+        <img src="assets/moon.png" alt="Dark Mode" id="theme-icon">
+        <span id="theme-text">Dark</span>
+    </button>
+    </header>
+    <body>
+    <section class='banner' id="banner">
+        <h1 class="titulo">Quem Somos</h1>
+        <h2>Somos parceiros do seu triunfo e acreditamos que nao se trata apenas 
+          de ter sucesso, a vitória tem que ser boa!</h2>
+    </section>
+    <section>
+      <div class="parallax-4">
+        <p class="subtitulo">
+          <span>A realidade agora é outra.</span>
+          A GooWin, tem como missão ajudar empreendedores a se desenvolverem e 
+          conquistarem 
+          posicionamento estratégico no mercado digital.  
+          Não estamos aqui só para fechar contratos, estamos aqui para construir 
+          relações,
+          porque acreditamos que poderemos contar uns com os outros sempre.
+          Esperamos poder atender às suas expectativas. 
+          Se precisar de assistência ou simplesmente trocar umas ideias, 
+          estaremos à disposição! 😊</p>
+        <blockquote class="citacao">"Acreditamos que o design é uma ferramenta 
+          poderosa para transformar ideias em realidade, criar conexões emocionais 
+          com o público e gerar valor para os negócios."</blockquote>
+      </div>
+    </section>
+    <div class="historia">
+      <h3 class="titulo-secao">Nossa História</h3>
+
+      <p class="texto">A GooWin é mais do que uma agência de branding e design 
+        digital. É um sonho que se tornou realidade, uma paixão que se transformou 
+        em propósito, uma missão que se traduz em resultados. 
+
+        Em 2022 formamos uma pequena equipe multidisciplinar, capaz de 
+        atender às demandas de diferentes segmentos e projetos, 
+        desenvolvendo estratégias de branding, 
+        identidades visuais, sites, campanhas digitais e muito mais. 
+        A GooWin se orgulha de entregar resultados de qualidade, criatividade e 
+        inovação, sempre buscando superar as expectativas dos clientes e criar 
+        relacionamentos duradouros.
+
+        E você, quer fazer parte dessa história? Quer ver o seu negócio crescer e 
+        se destacar no mercado digital? Então, entre em contato conosco e vamos 
+        conversar sobre as melhores soluções para o seu negócio ou projeto. Estamos te 
+        esperando! 😊</p>
+
+    </div>
+    <div class="divisoria"></div>
+    <div class="equipe">
+      <h3 class="titulo-secao">Nossa Equipe</h3>
+      <div class="membro">
+        <img class="foto" src="assets/maysa.jpg" alt="Foto de Maysa Carvalho"/>
+        <div class="perfil">
+          <h4 class="nome">Maysa Carvalho</h4>
+          <p class="cargo">Fundadora e Diretora de Criação</p>
+          <p class="texto">Maysa é formada em Design Gráfico pela Universidade 
+            Federal do Rio de Janeiro e tem mais de 10 anos de experiência na área. 
+            Ela é responsável pela direção de arte, concepção e execução dos projetos 
+            de branding e design digital da GooWin. Ela adora criar marcas que contam 
+            histórias e que se conectam com as pessoas. Ela também é apaixonada por 
+            música, cinema e viagens.</p>
+        </div>
+      </div>
+      <div class="membro">
+        <div>
+          <img class="foto" src="assets/hubert.jpeg" alt="Foto de Bruno Santos"/>
+        </div>
+       
+        <div class="perfil">
+          <h4 class="nome">Hubert Brito</h4>
+          <p class="cargo">Desenvolvedor Web e Mobile</p>
+          <p class="texto">Hubert é formado em sistemas de informação 
+            e especializado em sistemas para internet, 
+            Ele é responsável pelo desenvolvimento de sites, aplicações web, sistemas e 
+            integrações da GooWin. Ele domina diversas linguagens e tecnologias, como 
+            HTML, CSS, JavaScript, React, React Native, Word Press, Node.js, Firebase, entre outras. 
+            Ele também é fã de filmes de ação, quadrinhos e tecnologia.</p>
+        </div>
+      </div>
+      <div class="membro">
+        <img class="foto" src="assets/ana.jpg" alt="Foto de Ana Clara"/>
+        <div class="perfil">
+          <h4 class="nome">Ana Clara</h4>
+          <p class="cargo">Gerente de Marketing e Comunicação</p>
+          <p class="texto">Ana é formada em Comunicação Social pela Universidade Federal 
+            de Minas Gerais e tem mais de 7 anos de experiência na área. Ela é responsável 
+            pelo planejamento e gestão das estratégias de marketing e comunicação da GooWin. 
+            Ela cuida das redes sociais, do conteúdo, das campanhas, do SEO, do e-mail 
+            marketing, do relacionamento com os clientes e da análise de dados. 
+            Ela também é amante de livros, moda e gastronomia.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="rodape-parallax5"> 
+        <div class="rodape limite-largura">
+          <div  class="rodape-conteudo">
+            <h2>Links do site</h2>
+            <div>
+              <ul class="links-rodape">
+                <li><a class="links-a" href="index.html">Início</a></li>
+                <li><a href="servicos.html">Criação de sites</a></li>
+                <li><a href="branding.html">Branding</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+              </ul> 
+            </div>
+          </div>
+          <div class="rodape-conteudo">
+              <h2>Contato</h2>
+              <div>
+                  <img src="assets/local.png" title="Ícone local" alt="Ícone local">
+                  <span>Rio de Janeiro, RJ</span>
+                  <span>Minas Gerais, BH</span>
+
+              </div>
+              <div>
+                  <img src="assets/telefone.png" title="Ícone telefone" alt="Ícone telefone">
+                  <span>Telefone: (21) 9999-9999</span>
+              </div>
+              <div>
+                  <img src="assets/email.png" title="Ícone email" alt="Ícone email">
+                  <span>Email: contato@agencia.com.br</span>
+              </div>
+          </div>
+         
+          <div class="rodape-conteudo">
+              <h2>Nossas Redes Sociais</h2>
+              <div>
+                  <img src="assets/fb.png" title="Ícone facebook" alt="Ícone facebook">
+                  <span>/AgenciaGooWin.digital</span>
+              </div>
+              <div>
+                  <img src="assets/ig.png" title="Ícone instagram" alt="Ícone instagram">
+                  <span>@AgenciaGooWin.digital</span>
+              </div>
+              <div>
+                  <img src="assets/tt.png" title="Ícone twitter" alt="Ícone twitter">
+                  <span>@AgenciaGooWin.digital</span>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="container-rodape"> <!-- Rodapé da página -->
+        <p>&copy; GooWin - Produtora digital - Todos os direitos reservados</p>
+        <p>Desenvolvido por <span>"GooWin.digital"</span></p>
+        <a href="#banner"></a>
+      </div>
+     
+    </footer>
+    </body>
+</html>        
