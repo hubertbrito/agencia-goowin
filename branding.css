@@ -104,7 +104,9 @@ a {
   padding: 1rem;
   border-radius: 0.5rem;
 }
-
+.menu-pico{
+  color: #888888;
+}
 .menu a:hover {
   background: rgba(57, 70, 212, 0.1);
 }
@@ -150,9 +152,10 @@ a {
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
     border-radius: 0;
     font-size: 20px;
+  }
+  .menu-pico{
     color: #F6F4EC;
   }
-
   .btn-menu {
     background: none;
     border: none;
@@ -255,12 +258,123 @@ main {
   }
 
 
-  /********* CSS *********/
+  /*  rodape */
+.rodape-parallax5 {
+  margin-top: 40px;  
+  height: 60vh;
+  background-image: url("assets/rodape.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+.rodape {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: #000000;
+  opacity: 80%;
+}
+.rodape-conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+.rodape-conteudo h2 {
+  color: #8C4EE8;
+  margin: 0 0 15px 0;
+  font-size: 20px;
+}
+.rodape-conteudo div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.rodape-conteudo img {
+  width: 18px;
+}
+.rodape-conteudo span {
+  color: #F6F4EC;
+  font-size: 14px;
+  margin: 0 0 0 10px;
+}
+.limite-largura {
+  width: 100%;
+  height: 100%;
+}
+.menu-rodape{
+  color: #F6F4EC;
+}
+.links-rodape { /* tag <ul> */
+  max-width: 268px;
+  margin: 0 auto;
+  list-style: none;
+}
+.links-rodape a:hover{ /* tag <ul> */
+  color: #F6F4EC;
+  text-decoration: underline;
+}
+.links-rodape li{ 
+ padding: 2px 2px;
+}
+.container-rodape {
+position: relative;
+padding: 20px 0;
+line-height: 34px;
+letter-spacing: 1px;
+font-weight: 600;
+font-family: "Lato", sans-serif;
+text-align: center;
+background-color: #000000;
+color: #8C4EE8;
+}
+
+.container-rodape span {
+color: #F6F4EC;
+}
+.container-rodape a {
+display: inline-block;
+width: 60px;
+height: 60px;
+position: absolute;
+bottom: 80px;
+right: 50px;
+
+background-image: url("assets/seta-para-cima.png");
+background-position: center;
+background-size: cover;
+
+border-radius: 4px;
+}
+
+@media(max-width: 780px)
+{
+  .limite-largura {
+      flex-wrap: wrap;
+     
+  }
+  .container-rodape a {
+    z-index: 1000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 140px;
+    right: 40px;
+
+  }
+  .buttonzap{
+    display: none;
+  }
+}
+   
+
+/********* CSS zap*********/
 
 .icon {
   position: fixed;
-  bottom: 60px;
-  right: 30px;
+  bottom: 20px;
+  right: 50px;
   font-size: 30px;
   background-color: #01e675;
   color: #ffffff;
@@ -284,3 +398,5 @@ main {
   font-weight: 900;
   box-shadow: 2px 2px 20px #5fe690;
 }
+
+      

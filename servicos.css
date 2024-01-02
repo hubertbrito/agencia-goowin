@@ -98,6 +98,9 @@ a {
   display: flex;
   gap: 0.5rem;
 }
+.menu-pico{
+  color: #888888;
+}
 
 .menu a {
   display: block;
@@ -150,9 +153,10 @@ a {
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
     border-radius: 0;
     font-size: 20px;
+  }
+  .menu-pico{
     color: #F6F4EC;
   }
-
   .btn-menu {
     background: none;
     border: none;
@@ -232,7 +236,7 @@ a {
   }
   
   .texto-banner {
-    font-size: 36px;
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -242,21 +246,21 @@ a {
   
   .texto-banner p {
     margin: 10px auto;
-    font-size: 32px;
+    font-size: 21px;
     color: #8C4EE8;
     font-weight: 800;
   }
   
   .texto-banner h2 {
     margin: 10px auto;
-    font-size: 48px;
+    font-size: 26px;
     font-weight: bold;
   }
   
   .texto-banner h1 {
     margin: 10px auto;
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 32px;
+    font-weight: 900;
   }
   
 
@@ -275,7 +279,7 @@ a {
 
     .texto-banner p {
       width: auto;
-      font-size: 27px;
+      font-size: 18px;
       padding: 20px 10px;
     }
     
@@ -284,7 +288,7 @@ a {
     }
     
     .texto-banner h1 {
-      font-size: 48px;
+      font-size: 32px;
     }
 
     #theme-button  {
@@ -333,16 +337,16 @@ a {
   }
 .title-solucoes {
     padding: 0 0 0 28px;
-    font-size: 32px;
+    font-size: 29px;
     color:#8C4EE8;
 }
 .subtitle-solucoes {
     padding: 0px 0 12px 28px;
-    font-size: 24px;
+    font-size: 22px;
   }
 .servico-secao1 p {
     padding: 0px 0 0 28px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -369,17 +373,17 @@ a {
   }
 .title-solucoes {
     padding: 8px;
-    font-size: 32px;
+    font-size: 26px;
     color:#8C4EE8;
     letter-spacing: 1px;
 }
 .subtitle-solucoes {
     padding: 8px;
-    font-size: 24px;
+    font-size: 22px;
   }
 .servico-secao1 p {
     padding: 8px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
 
@@ -425,15 +429,15 @@ a {
 }
 .adicionais-title h2 {
   padding: 5px 15px;
-  font-size: 32px;
+  font-size: 29px;
 }
 .adicionais-title h3 {
   padding: 0px 15px;
-  font-size: 24px;
+  font-size: 22px;
 }
 .adicionais-title p {
   padding: 10px 12px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 .card {
@@ -446,7 +450,6 @@ a {
   
 }
 .card-title{
-  color: #FF8C20;
   text-align: center;
 }
 
@@ -574,19 +577,18 @@ a {
         }
 
         .container-info h3{
-            color: #FF8C20;
             padding: 5px 0 2px 0;
-            font-size: 28px;
+            font-size: 22px;
            
         }
         
         .container-info small {
             padding: 3px 0 15px 0;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
           }
         .container-info p {
-          font-size: 20px;
+          font-size: 18px;
           letter-spacing: 1px;
         }
 
@@ -598,7 +600,7 @@ a {
             display: none;
           }
           .container-info h3{
-            font-size: 26px;
+            font-size: 22px;
             padding: 6px 0 12px 0;
           }
           .container-list{
@@ -609,7 +611,7 @@ a {
           .titulo-lista{
             width: 100%;
             padding-right: 15px;
-            font-size: 22px;
+            font-size: 20px;
             text-align: center;
 
           }
@@ -628,9 +630,9 @@ a {
             font-weight: 500;
           }
            .lista .item-lista{
-            font-size: 20px;
+            font-size: 18px;
             letter-spacing: 1px;
-            line-height: 25px;
+            line-height: 22px;
             padding-bottom: 20px;
           }
           
@@ -641,7 +643,7 @@ a {
           padding: 20px;
         }
         .titulo-lista {
-          font-size: 25px;
+          font-size: 22px;
           padding-right: 30px;
           
         }
@@ -675,7 +677,7 @@ a {
           text-align: center;
           padding: 12px 8px;
           font-style: italic;
-          font-size: 26px;
+          font-size: 22px;
           font-weight: bold;
           color: #8C4EE8;
         }
@@ -696,9 +698,9 @@ a {
           justify-content: center;
           align-items: start ;
           padding: 250px 80px 0 40px;
-          font-size: 38px;  
+          font-size: 29px;  
           letter-spacing: 3px;  
-          line-height: 60px;    
+          line-height: 54px;    
           font-weight: 900;
           width: 50%;
         }
@@ -724,14 +726,6 @@ a {
           position: relative;
           padding: 3px 40px 15px;
       }
-      
-      .titulo-fases h1 {
-          font-size: 28px;
-          color: #8C4EE8;
-          padding: 20px;
-         
-      }
-      
       .container-fases h3 {
           margin-bottom: 12px;
           font-size: 16px;
@@ -741,12 +735,11 @@ a {
       
       .texto-fases {
           font-size: 16px;
-          line-height: 24px;
+          line-height: 22px;
           text-align: left;
           letter-spacing: 1px;
           font-weight: 400;
       }
-      
       .icone-fases {
           width: 50px;
           height: 46px;
@@ -760,18 +753,6 @@ a {
           position: absolute;
           top: -10px;
           left: -40px;
-      }
-      
-      .btn-fases {
-          font-size: 13px;
-          font-weight: 500;
-          background-color: #8C4EE8;
-          color: #fff700;
-          position: absolute;
-          right: 10px;
-          bottom: -12px;
-          padding: 5px 8px;
-      
       }
 
       @media screen and (max-width: 780px){
@@ -794,21 +775,21 @@ a {
           justify-content: center;
           align-items: center ;
           padding: 12px;
-          font-size: 28px;  
+          font-size: 24px;  
           letter-spacing: 1px;  
-          line-height: 35px;  
+          line-height: 27px;  
           font-weight: 900;
           width: 100%;
           text-align: center;
         }
 
         .container-fases h3 {
-          font-size: 24px;
+          font-size: 21px;
           color: #8C4EE8;
       }
       
        .texto-fases {
-          font-size: 20px;
+          font-size: 18px;
           line-height: 22px;
           text-align: left;
           font-weight: 500;
@@ -858,7 +839,7 @@ a {
   padding: 80px 0px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 22px;
   letter-spacing: 1px;
   text-align: center;
  
@@ -867,16 +848,17 @@ a {
   margin: 0 auto;
   max-width: 1024px;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 2px;
   color: #8C4EE8;
+  padding: 0 15px 15px;
 }
 .container-texto p {
-  font-size: 20px;
+  font-size: 18px;
   max-width: 1024px;
   padding: 0px 20px;
   margin: 0 auto;
-  line-height: 28px;
+  line-height: 22px;
   letter-spacing: 1px;
 }
 
@@ -888,17 +870,15 @@ a {
   }
   .container-texto h2 {
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 22px;
     letter-spacing: 2px;
     color: #8C4EE8;
-    line-height: 29px;
   }
   .container-texto p {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 1024px;
     padding: 0px 20px;
     margin: 0 auto;
-    line-height: 27px;
     letter-spacing: 1px;
   }
   
@@ -941,7 +921,7 @@ margin-bottom: 12px;
   .lista-especificacoes li h3 { /* subtitulo = <h3> */
     margin-top: 20px;
     padding: 6px 10px;
-    font-size: 24px;
+    font-size: 22px;
   }
   .lista-horarios li p { /* paragrafo */
   font-weight: 500;
@@ -952,7 +932,7 @@ margin-bottom: 12px;
 /*  rodape */
 .rodape-parallax5 {
   margin-top: 40px;  
-  height: 45vh;
+  height: 60vh;
   background-image: url("assets/rodape.jpg");
   position: relative;
   background-position: center;
@@ -964,17 +944,17 @@ margin-bottom: 12px;
   justify-content: space-around;
   margin: 0 auto;
   background-color: #000000;
-  opacity: 85%;
+  opacity: 80%;
 }
 .rodape-conteudo {
   display: flex;
   flex-direction: column;
-  padding: 25px 0px;
+  padding: 25px 0;
 }
 .rodape-conteudo h2 {
-  color: #F6F4EC;
+  color: #8C4EE8;
   margin: 0 0 15px 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 .rodape-conteudo div {
   display: flex;
@@ -993,32 +973,35 @@ margin-bottom: 12px;
   width: 100%;
   height: 100%;
 }
+.menu-rodape{
+  color: #F6F4EC;
+}
 .links-rodape { /* tag <ul> */
-  max-width: 270px;
+  max-width: 268px;
   margin: 0 auto;
   list-style: none;
 }
 .links-rodape a:hover{ /* tag <ul> */
   color: #F6F4EC;
+  text-decoration: underline;
 }
 .links-rodape li{ 
  padding: 2px 2px;
 }
-
 .container-rodape {
 position: relative;
 padding: 20px 0;
 line-height: 34px;
-letter-spacing: 2px;
+letter-spacing: 1px;
 font-weight: 600;
 font-family: "Lato", sans-serif;
 text-align: center;
 background-color: #000000;
-color: #F6F4EC;
+color: #8C4EE8;
 }
 
 .container-rodape span {
-color: #FF8C20;
+color: #F6F4EC;
 }
 .container-rodape a {
 display: inline-block;
@@ -1031,6 +1014,7 @@ right: 50px;
 background-image: url("assets/seta-para-cima.png");
 background-position: center;
 background-size: cover;
+
 border-radius: 4px;
 }
 
@@ -1043,16 +1027,47 @@ border-radius: 4px;
   .container-rodape a {
     z-index: 1000;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    bottom: 140px;
-    right: 40px;
+    bottom: 100px;
+    right: 25px;
 
   }
+  .buttonzap{
+    display: none;
+  }
+}
+   
+
+/********* CSS zap*********/
+
+.icon {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  font-size: 30px;
+  background-color: #01e675;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 100;
+  box-shadow: 2px 2px 2px #c0bdbd;
 }
 
+.icon .fab{
+  padding-top: 9px;
+}
 
+.icon:hover{
+  background-color: #fff;
+  color: #029e3b;
+  font-weight: 900;
+  box-shadow: 2px 2px 20px #5fe690;
+}
 
-
-        
+      

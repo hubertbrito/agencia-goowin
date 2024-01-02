@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var logo = document.getElementById('topo-logo');
     var text = document.getElementById('theme-text');
     var menu = document.getElementById('header');
+    var link = document.getElementById('link-cor');  
   
     if (document.body.classList.contains('dark-mode')) {
         button.className = 'modo-escuro';
@@ -30,12 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
         logo.src = 'assets/logo2.png';
         text.textContent = 'Light';
         menu.className = 'menu-dark';
+        link.className = 'link-branco';
     } else {
         button.className = 'modo-claro';
         image.src = 'assets/moon.png';
         logo.src = 'assets/logoclara.png';
         text.textContent = 'Dark';
         menu.className = 'menu-light';
+        link.className = 'link-preto';
     }
   }
   

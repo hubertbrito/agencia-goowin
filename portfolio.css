@@ -104,6 +104,9 @@ a {
   padding: 1rem;
   border-radius: 0.5rem;
 }
+.menu-pico{
+  color: #888888;
+}
 
 .menu a:hover {
   background: rgba(57, 70, 212, 0.1);
@@ -150,6 +153,9 @@ a {
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
     border-radius: 0;
     font-size: 20px;
+    color: #F6F4EC;
+  }
+  .menu-pico{
     color: #F6F4EC;
   }
 
@@ -245,7 +251,7 @@ main {
   
   .secao-banner-sabores {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     position: relative;
     margin-top: 60px;
@@ -267,11 +273,11 @@ main {
   }
   
   .titulo-banner-sabores h1{
-    font-size: 100px;
+    font-size: 26px;
   }
   
   .titulo-banner-sabores h2{
-    font-size: 36px;
+    font-size: 32px;
     color: #8C4EE8;
     font-weight: 400;
   }
@@ -292,7 +298,7 @@ main {
   }
   
   .container-sorvetes {
-    padding: 5px 5px;
+    padding: 5px 40px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -302,13 +308,12 @@ main {
   .box-sorvete {
     width: 30%;
     height: auto;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
     line-height: 26px;
     border-radius: 4px ;
-    box-shadow: 2px 2px 15px 2px #d9dde1;
     margin-bottom: 30px;
   }
   
@@ -316,10 +321,11 @@ main {
   .box-sorvete p {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 8px;
   }
 
   .box-sorvete h3 {
-    font-size: 28px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 3px;
   }
@@ -342,6 +348,7 @@ main {
     .container-sorvetes {
       flex-direction: column;
       align-items: center;
+      padding: 0px;
     }
   
     .box-sorvete {
@@ -367,10 +374,10 @@ main {
   }
 
 
-  /*  rodape */
+ /*  rodape */
 .rodape-parallax5 {
   margin-top: 40px;  
-  height: 45vh;
+  height: 60vh;
   background-image: url("assets/rodape.jpg");
   position: relative;
   background-position: center;
@@ -390,7 +397,7 @@ main {
   padding: 25px 0;
 }
 .rodape-conteudo h2 {
-  color: #F6F4EC;
+  color: #8C4EE8;
   margin: 0 0 15px 0;
   font-size: 20px;
 }
@@ -411,14 +418,17 @@ main {
   width: 100%;
   height: 100%;
 }
+.menu-rodape{
+  color: #F6F4EC;
+}
 .links-rodape { /* tag <ul> */
   max-width: 268px;
   margin: 0 auto;
   list-style: none;
-  color: #F6F4EC;
 }
 .links-rodape a:hover{ /* tag <ul> */
   color: #F6F4EC;
+  text-decoration: underline;
 }
 .links-rodape li{ 
  padding: 2px 2px;
@@ -427,16 +437,16 @@ main {
 position: relative;
 padding: 20px 0;
 line-height: 34px;
-letter-spacing: 2px;
+letter-spacing: 1px;
 font-weight: 600;
 font-family: "Lato", sans-serif;
 text-align: center;
 background-color: #000000;
-color: #F6F4EC;
+color: #8C4EE8;
 }
 
 .container-rodape span {
-color: #FF8C20;
+color: #F6F4EC;
 }
 .container-rodape a {
 display: inline-block;
@@ -449,6 +459,7 @@ right: 50px;
 background-image: url("assets/seta-para-cima.png");
 background-position: center;
 background-size: cover;
+
 border-radius: 4px;
 }
 
@@ -468,4 +479,40 @@ border-radius: 4px;
     right: 40px;
 
   }
+  .buttonzap{
+    display: none;
+  }
 }
+   
+
+/********* CSS zap*********/
+
+.icon {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  font-size: 30px;
+  background-color: #01e675;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 100;
+  box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+.icon .fab{
+  padding-top: 9px;
+}
+
+.icon:hover{
+  background-color: #fff;
+  color: #029e3b;
+  font-weight: 900;
+  box-shadow: 2px 2px 20px #5fe690;
+}
+
+      

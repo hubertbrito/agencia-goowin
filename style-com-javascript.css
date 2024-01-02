@@ -30,6 +30,7 @@
 
 }
 
+
 body {
 --color-background: #F6F4EC;
 --color-text: #25282A;
@@ -50,20 +51,21 @@ body.dark-mode {
   background-color: #25282A; /* Cor de fundo do modo escuro */
 
 }
-
-#topo-logo {
-  width: 150px;
- 
+.logo-banner{
+  margin: 0 auto;
+  padding: 0px 8px;
 }
 
-
+#topo-logo {
+  width: 550px;
+ }
 a {
-  color: #FF8C20;
   text-decoration: none;
   font-size: 18px;
   margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
 }
-
 #header {
   width: 100%;
   display: flex;
@@ -76,7 +78,6 @@ a {
   height: 4.6875rem;
   padding: 1rem;
 }
-
 #theme-button {
   width: 60px;
   height: 30px;
@@ -90,27 +91,26 @@ a {
   margin-top: 20px;
   cursor: pointer;
 }
-
 #theme-icon{
   width: 15px;
   height: 15px;
   margin-right: 3px;
 }
-
 .menu {
   list-style: none;
   display: flex;
   gap: 0.5rem;
 }
-
 .menu a {
   display: block;
   padding: 1rem;
   border-radius: 0.5rem;
 }
-
 .menu a:hover {
-  background:rgba(57, 70, 212, 0.1) ;
+  background:rgba(121, 137, 255, 0.2) ;
+}
+.menu-pico{
+  color: #888888;
 }
 
 .btn-menu {
@@ -129,7 +129,6 @@ a {
   }
 
   #topo-logo {
-      margin-left: 15px;
       width: 100px;
     }
 
@@ -146,7 +145,6 @@ a {
     visibility: hidden;
     overflow-y: hidden;
     transition: 0.5s;
-    color: #F6F4EC;
   }
 
   .menu a {
@@ -155,6 +153,8 @@ a {
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
     border-radius: 0;
     font-size: 20px;
+  }
+  .menu-pico{
     color: #F6F4EC;
   }
 
@@ -223,7 +223,7 @@ a {
 
   .secao-banner {
     width: 100%;
-    height: 85vh;
+    height: 95vh;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
@@ -236,7 +236,6 @@ a {
   }
   
   .texto-banner {
-    font-size: 36px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -246,20 +245,20 @@ a {
   
   .texto-banner p {
     margin: 10px auto;
-    font-size: 32px;
-    color: #8C4EE8;
+    font-size: 20px;
     font-weight: 800;
   }
   
   .texto-banner h2 {
     margin: 10px auto;
-    font-size: 48px;
+    font-size: 29px;
     font-weight: bold;
   }
   
   .texto-banner h1 {
-    margin: 10px auto;
-    font-size: 80px;
+    margin-bottom: -49px;
+    padding-right: 145px;
+    font-size: 38px;
     font-weight: 800;
   }
   
@@ -277,39 +276,25 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   
   .container-bemVindos h2{
-    color: #8C4EE8;
-    font-size: 36px;
-    margin-bottom: 30px;
-    font-weight: 500;
-  }
-  
-  .digital {
-    color: #FF8C20;
-    font-size: 34px;
+    font-size: 32px;
     margin-bottom: 30px;
     font-weight: 500;
   }
   
   .primeiro-paragrafo {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
   }
   
-  .assinatura {
-    font-family: 'Great Vibes', cursive;
-    font-weight: 500;
-    font-size: 18px;
-    color: #B2987D;
-  }
-  
     /* seção Topicos de serviços  */
   
-    #secao-apresentacao {
+    .secao-apresentacao {
+      max-width: 1024px;
       display: flex;
       width: 100%;
       padding-top: 50px;
@@ -321,32 +306,42 @@ a {
       width: 100%;
       display: flex;
       justify-content: space-around;
+      align-items: center;
+      margin-bottom: 50px;
+     }
+     .titulo-topicos{
+      display: flex;
+      justify-content: center;
+      align-items: center;
      }
     
      .titulo-topicos h3 {
-      font-size: 48px;
+      padding-bottom: 40px;
+      font-size: 24px;
      }
     
      .mini-card {
-      width: 225px;
+      width: 160px;
       height: 150px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #343f47;
       text-align: center;
+      border: 1px solid #F1068B;
      
      }
     
      .cards-topicos {
+      width: 80%;
+      margin-bottom: 50px;
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       gap: 20px;
-      padding: 100px;
-      justify-content: center;
-      background-color: #25282a;
-      color: #f6f4ec;
+      padding: 10px;
+      justify-content: space-evenly;
+     
      }
      
      .icones-topicos{
@@ -354,13 +349,12 @@ a {
     }
     
      .titulo-topicos {
-      width: 50%;
+      width: 30%;
       display: flex;
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      padding: 20px 60px;
-      background-color: #fcb91b;
+      padding: 20px 1px;
      }  
   
      .topico-servico {
@@ -375,12 +369,12 @@ a {
     /* fim apresentaçao */
 
     .titulo-secao {
+        margin: 0 auto;
+        max-width: 1024px;
         text-align: left;
-        margin-left: 40px;
-        margin-top: 40px;
         padding-top: 5px;
         border-left: 4px solid #8C4EE8;
-        font-size: 28px;
+        font-size: 22px;
         font-weight: bold;
         padding-left: 10px;
       }
@@ -388,13 +382,15 @@ a {
       /* secao servicos */
 
       .servicos {
+        margin: 0 auto;
+        max-width: 1024px;
         width: 100%;
         display: flex;
       }
 
       .titulo-servico1{
-        color:  #F1068B;
-        font-size: 45px;
+        color:  #25282A;
+        font-size: 32px;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -404,8 +400,8 @@ a {
      }
 
      .titulo-servico2{
-        color:  #FF8C20;
-        font-size: 45px;
+        color: #25282A;
+        font-size: 32px;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -420,45 +416,46 @@ a {
         display: flex;
         box-sizing: border-box;
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
+        
      }
 
      .texto-servico span {
-        font-size: 21px;
+        font-size: 18px;
         font-style: italic;
         font-weight: 400;
         margin-top: 10px;
-        line-height: 26px;
+        line-height: 22px;
         letter-spacing: 1px;
       }
 
       .texto-servico p {
         padding: 10px 10px;
-        line-height: 26px;
-        margin: 40px 0;
-        font-size: 21px;
-        line-height: 26px;
+        line-height: 22px;
+        margin: 20px 0;
+        font-size: 16px;
         letter-spacing: 1px;
+      }
+      .saber-mais{
+        text-align: left;
       }
 
       .botao-servicos {
-        background-color: #F6F4EC;
-        color: #25282a;
+        color: #888888;
         padding: 6px 12px;
-        box-shadow: 0px 0px 0px 0px #25282a;
-        border-radius: 5px;
         letter-spacing: 1px;
+        text-align: left;
+        text-decoration: underline;
         
       }
   
       .botao-servicos:hover{
-        background-color: rgba(140, 78, 232, 0.7)
-        ;
-        color: #F6F4EC;
         padding: 6px 12px; 
-        box-shadow: 1px 1px 6px 1px #f6f4ec;   
-        box-sizing: border-box;
+        box-shadow: 0px 0px 35px 0px #b3b9ff inset;   
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
     }
      /* fim secao servicos */
 
@@ -479,7 +476,7 @@ a {
 
       .texto-servico h2 {
         font-size: 35px;
-        line-height: 26px;
+        line-height: 22px;
         text-align: center;
         padding-top: 20px;
       }
@@ -493,7 +490,7 @@ a {
       }
    
       form {
-        width: 50%;
+        width: 60%;
         background-color: #F6F4EC;
         padding: 20px;
         border-radius: 8px;
@@ -502,7 +499,7 @@ a {
 
     label {
         font-size: 12px;
-        color:#8C4EE8;
+        color: #25282A;
         display: block;
         margin-bottom: 10px;
     }
@@ -535,29 +532,38 @@ a {
 
     
     @media screen and (max-width: 780px){
+      
+      #topo-logo {
+        width: 340px;
+       
+      }
 
       .secao-banner {
         width: auto;
-        height: 60vh;
+        height: 70vh;
         margin-top: 60px;
       }
 
       .texto-banner {
-        margin: 0 auto;
-        padding: 10px 15px;
+        width: 100%;
+        padding: 10px 12px;
       }
 
       .texto-banner p {
-        font-size: 22px;
-        padding: 20px 10px;
+        font-size: 20px;
+        
+        
       }
       
       .texto-banner h2 {
-        font-size: 26px;
+        font-size: 24px;
       }
       
       .texto-banner h1 {
-        font-size: 42px;
+        margin-bottom: -25px;
+        margin-top: 40px;
+        padding-right: 70px;
+        font-size: 25px;
       }
 
       #theme-button  {
@@ -578,17 +584,18 @@ a {
     
          .servicos {
             flex-direction: column;
+            margin-bottom: 60px;
         }
 
         .titulo-servico1{
-            font-size: 28px;
+            font-size: 21px;
             width: 100%;
-            padding: 20px 10px;
+            padding: 50px 10px 20px;
          }
         .titulo-servico2{
-            font-size: 28px;
+            font-size: 21px;
             width: 100%;
-            padding: 20px 40px;
+            padding: 50px 10px 20px;
          }
 
          .texto-servico {
@@ -596,8 +603,8 @@ a {
             padding: 0px 10px;
         }
 
-        .texto-servico span {
-            padding: 10px;
+        .texto-servico a{
+            padding: 0px 0 35px ;
           }
 
           .texto-servico p {
@@ -609,7 +616,11 @@ a {
             font-size: 32px;
             line-height: 32px;
             text-align: center;
-            padding: 30px 20px 5px 20px;
+            padding: 50px 20px 5px 20px;
+          }
+          .titulo-secao{
+            padding: 12px;
+            margin-left: 25px;
           }
 
         
@@ -637,13 +648,14 @@ a {
            }
 
            .servicos img {
+            margin: 0 auto;
             width: 100%;
-            padding: 20px 2px;
+            padding: 20px 0px;
           }
 
           .container-form {
             width: 100%;
-            margin: 20px 0px;
+            margin: 30px 0px;
           }
           form {
             width: 90%;
@@ -658,15 +670,9 @@ a {
             font-size: 21px;
             font-weight: 400;
             margin-bottom: 20px;
-            line-height: 28px;
+            line-height: 26px;
           }
           
-          .assinatura {
-            font-family: 'Great Vibes', cursive;
-            font-weight: 500;
-            font-size: 18px;
-            color: #B2987D;
-          }
       #theme-button  {
         display: flex;
         align-items: center;
@@ -686,7 +692,7 @@ a {
 /*  rodape */
 .rodape-parallax5 {
   margin-top: 40px;  
-  height: 45vh;
+  height: 60vh;
   background-image: url("assets/rodape.jpg");
   position: relative;
   background-position: center;
@@ -706,7 +712,7 @@ a {
   padding: 25px 0;
 }
 .rodape-conteudo h2 {
-  color: #F6F4EC;
+  color: #8C4EE8;
   margin: 0 0 15px 0;
   font-size: 20px;
 }
@@ -727,40 +733,43 @@ a {
   width: 100%;
   height: 100%;
 }
+.menu-rodape{
+  color: #F6F4EC;
+}
 .links-rodape { /* tag <ul> */
   max-width: 268px;
   margin: 0 auto;
   list-style: none;
-  color: #F6F4EC;
 }
 .links-rodape a:hover{ /* tag <ul> */
   color: #F6F4EC;
+  text-decoration: underline;
 }
 .links-rodape li{ 
- padding: 2px 2px;
+ padding: 2px 0px;
 }
 .container-rodape {
 position: relative;
-padding: 20px 0;
+padding: 20px 10px;
 line-height: 34px;
-letter-spacing: 2px;
+letter-spacing: 1px;
 font-weight: 600;
 font-family: "Lato", sans-serif;
 text-align: center;
 background-color: #000000;
-color: #F6F4EC;
+color: #8C4EE8;
 }
 
 .container-rodape span {
-color: #FF8C20;
+color: #F6F4EC;
 }
 .container-rodape a {
 display: inline-block;
-width: 60px;
-height: 60px;
+width: 80px;
+height: 80px;
 position: absolute;
-bottom: 80px;
-right: 50px;
+bottom: 100px;
+right: 40px;
 
 background-image: url("assets/seta-para-cima.png");
 background-position: center;
@@ -778,11 +787,11 @@ border-radius: 4px;
   .container-rodape a {
     z-index: 1000;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    bottom: 140px;
-    right: 40px;
+    bottom: 120px;
+    right: 10px;
 
   }
   .buttonzap{

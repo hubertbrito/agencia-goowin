@@ -54,7 +54,6 @@ body.dark-mode {
 
 
 a {
-  color: #FF8C20;
   text-decoration: none;
   font-size: 18px;
   margin-top: 20px;
@@ -104,6 +103,9 @@ a {
   padding: 1rem;
   border-radius: 0.5rem;
 }
+.menu-pico{
+  color: #888888;
+}
 
 .menu a:hover {
   background: rgba(57, 70, 212, 0.1);
@@ -150,6 +152,8 @@ a {
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
     border-radius: 0;
     font-size: 20px;
+  }
+  .menu-pico{
     color: #F6F4EC;
   }
 
@@ -256,14 +260,14 @@ a {
 }
   /* Estilizar o título */
   .titulo {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     padding-bottom: 27px;
     font-weight: bolder;
     color: #8C4EE8;
   }
   .banner h2{
-    font-size: 38px;
+    font-size: 29px;
     text-align: center;
     font-weight: bolder;
   }
@@ -272,23 +276,23 @@ a {
   .subtitulo {
     padding: 20px 0;
     margin: 0 auto;
-    max-width: 500px;
-    font-size: 21px;
+    max-width: 600px;
+    font-size: 18px;
     text-align: left;
     margin-top: 20px;
     color: #F6F4EC;
     letter-spacing: 2px;
-    line-height: 28px;
+    line-height: 22px;
 }
   .subtitulo span {
     color: #FCB91B;
-    font-size: 39px;
+    font-size: 26px;
   }
   /* Estilizar a citação */
   .citacao {
     margin: 0 auto;
     max-width: 600px;
-    font-size: 21px;
+    font-size: 18px;
     font-style: italic;
     text-align: left;
     margin-top: 20px;
@@ -310,7 +314,7 @@ a {
   .titulo-secao {
     margin: 0 auto;
     max-width: 1200px;
-    font-size: 35px;
+    font-size: 29px;
     font-weight: bold;
     color: #8C4EE8;
     padding: 20px 1px;
@@ -320,11 +324,11 @@ a {
   .texto {
     margin: 0 auto;
     max-width: 1200px;
-    font-size: 21px;
+    font-size: 18px;
     margin-top: 20px;
     padding: 12px;
     letter-spacing: 1px;
-    line-height: 26px;
+    line-height: 22px;
   }
   .divisoria {
     width: 80%;
@@ -374,13 +378,13 @@ a {
   
   /* Estilizar o nome do membro da equipe */
   .nome {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
   }
   
   /* Estilizar o cargo do membro da equipe */
   .cargo {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
   }
   
@@ -419,15 +423,15 @@ a {
       .subtitulo {
         margin: 0 auto;
         max-width: 100%;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         margin-top: 20px;
         padding: 0 12px 20px;
         letter-spacing: 2px;
-        line-height: 26px;
+        line-height: 22px;
       }
       .subtitulo span {
-        font-size: 28px;
+        font-size: 24px;
       }
       .parallax-4 {
         height: 98vh;
@@ -442,115 +446,152 @@ a {
     .historia {
         padding: 15px;
         letter-spacing: 2px;
-        line-height: 26px;
-        font-size: 20px;
+        line-height: 22px;
+        font-size: 18px;
 
       }
   
   }
 
   /*  rodape */
-    .rodape-parallax5 {
-    margin-top: 40px;  
-    height: 45vh;
-    background-image: url("assets/rodape.jpg");
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; 
-  }
+.rodape-parallax5 {
+  margin-top: 40px;  
+  height: 60vh;
+  background-image: url("assets/rodape.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
+}
 .rodape {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    background-color: #000000;
-    opacity: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: #000000;
+  opacity: 80%;
 }
 .rodape-conteudo {
-    display: flex;
-    flex-direction: column;
-    padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
 }
 .rodape-conteudo h2 {
-    color: #F6F4EC;
-    margin: 0 0 15px 0;
-    font-size: 20px;
+  color: #8C4EE8;
+  margin: 0 0 15px 0;
+  font-size: 20px;
 }
 .rodape-conteudo div {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
 }
 .rodape-conteudo img {
-    width: 18px;
+  width: 18px;
 }
 .rodape-conteudo span {
-    color: #F6F4EC;
-    font-size: 14px;
-    margin: 0 0 0 10px;
+  color: #F6F4EC;
+  font-size: 14px;
+  margin: 0 0 0 10px;
 }
 .limite-largura {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.menu-rodape{
+  color: #F6F4EC;
 }
 .links-rodape { /* tag <ul> */
-    max-width: 268px;
-    margin: 0 auto;
-    list-style: none;
+  max-width: 268px;
+  margin: 0 auto;
+  list-style: none;
 }
 .links-rodape a:hover{ /* tag <ul> */
   color: #F6F4EC;
+  text-decoration: underline;
 }
 .links-rodape li{ 
  padding: 2px 2px;
 }
-
 .container-rodape {
-  position: relative;
-  padding: 20px 0;
-  line-height: 34px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  background-color: #000000;
-  color: #F6F4EC;
+position: relative;
+padding: 20px 0;
+line-height: 34px;
+letter-spacing: 1px;
+font-weight: 600;
+font-family: "Lato", sans-serif;
+text-align: center;
+background-color: #000000;
+color: #8C4EE8;
 }
 
 .container-rodape span {
-  color: #FF8C20;
+color: #F6F4EC;
 }
 .container-rodape a {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  bottom: 80px;
-  right: 50px;
+display: inline-block;
+width: 60px;
+height: 60px;
+position: absolute;
+bottom: 80px;
+right: 50px;
 
-  background-image: url("assets/seta-para-cima.png");
-  background-position: center;
-  background-size: cover;
-  border-radius: 4px;
+background-image: url("assets/seta-para-cima.png");
+background-position: center;
+background-size: cover;
+
+border-radius: 4px;
 }
 
 @media(max-width: 780px)
 {
-    .limite-largura {
-        flex-wrap: wrap;
-       
-    }
-    .container-rodape a {
-      z-index: 1000;
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      bottom: 140px;
-      right: 40px;
+  .limite-largura {
+      flex-wrap: wrap;
+     
+  }
+  .container-rodape a {
+    z-index: 1000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 140px;
+    right: 40px;
 
-    }
-    .links-rodape li a:hover{ 
-      color: #F6F4EC;
-    }
+  }
+  .buttonzap{
+    display: none;
+  }
 }
+   
+
+/********* CSS zap*********/
+
+.icon {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  font-size: 30px;
+  background-color: #01e675;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 100;
+  box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+.icon .fab{
+  padding-top: 9px;
+}
+
+.icon:hover{
+  background-color: #fff;
+  color: #029e3b;
+  font-weight: 900;
+  box-shadow: 2px 2px 20px #5fe690;
+}
+
+      
