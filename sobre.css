@@ -260,7 +260,7 @@ a {
 }
   /* Estilizar o título */
   .titulo {
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
     padding-bottom: 27px;
     font-weight: bolder;
@@ -304,7 +304,7 @@ a {
   /* Estilizar a seção de história */
   .historia {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1024px;
     margin-top: 40px;
     padding: 12px;
     text-align: center;
@@ -313,8 +313,8 @@ a {
   /* Estilizar o título da seção */
   .titulo-secao {
     margin: 0 auto;
-    max-width: 1200px;
-    font-size: 29px;
+    max-width: 1024px;
+    font-size: 22px;
     font-weight: bold;
     color: #8C4EE8;
     padding: 20px 1px;
@@ -323,7 +323,7 @@ a {
   /* Estilizar o texto da seção */
   .texto {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1024px;
     font-size: 18px;
     margin-top: 20px;
     padding: 12px;
@@ -353,7 +353,7 @@ a {
   .membro {
     flex: 1;
     width: 0 auto;
-    max-width: 1200px;
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -414,7 +414,7 @@ a {
       .citacao {
         font-size: 18px;
         margin-left: 20px;
-        max-width: 100vw;
+        max-width: 100%;
         padding-left: 12px;
         padding-right: 10px;
         padding-bottom: 10px;
@@ -431,7 +431,7 @@ a {
         line-height: 22px;
       }
       .subtitulo span {
-        font-size: 24px;
+        font-size: 21px;
       }
       .parallax-4 {
         height: 98vh;
@@ -471,13 +471,14 @@ a {
   opacity: 80%;
 }
 .rodape-conteudo {
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
-  padding: 25px 0;
+  padding: 25px 0px 0px;
 }
 .rodape-conteudo h2 {
   color: #8C4EE8;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   font-size: 20px;
 }
 .rodape-conteudo div {
@@ -510,11 +511,11 @@ a {
   text-decoration: underline;
 }
 .links-rodape li{ 
- padding: 2px 2px;
+ padding: 2px 0px;
 }
 .container-rodape {
 position: relative;
-padding: 20px 0;
+padding: 20px 10px;
 line-height: 34px;
 letter-spacing: 1px;
 font-weight: 600;
@@ -529,11 +530,11 @@ color: #F6F4EC;
 }
 .container-rodape a {
 display: inline-block;
-width: 60px;
-height: 60px;
+width: 80px;
+height: 80px;
 position: absolute;
-bottom: 80px;
-right: 50px;
+bottom: 100px;
+right: 40px;
 
 background-image: url("assets/seta-para-cima.png");
 background-position: center;
@@ -542,20 +543,26 @@ background-size: cover;
 border-radius: 4px;
 }
 
-@media(max-width: 780px)
-{
-  .limite-largura {
+@media(max-width: 780px){
+
+  .rodape-parallax5 { 
+    height: 70vh;
+  
+  }
+  .rodape{
       flex-wrap: wrap;
+      gap: 6px;
+      flex: 1;
      
   }
   .container-rodape a {
     z-index: 1000;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    bottom: 140px;
-    right: 40px;
+    bottom: 120px;
+    right: 10px;
 
   }
   .buttonzap{
@@ -594,4 +601,4 @@ border-radius: 4px;
   box-shadow: 2px 2px 20px #5fe690;
 }
 
-      
+     

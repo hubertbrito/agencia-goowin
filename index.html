@@ -36,12 +36,12 @@
           >Menu<span class="hamburger"></span
         ></label> -->
         <ul class="menu" id="menu" role="menu">
-          <li><a href="index.html"><span class="menu-pico">Início</span></a></li>
-          <li><a href="servicos.html"><span class="menu-pico">Criação de sites</span></a></li>
-          <li><a href="branding.html"><span class="menu-pico">Branding</span></a></li>
-          <li><a href="portifolio.html"><span class="menu-pico">Portifólio</span></a></li>
-          <li><a href="contato.html"><span class="menu-pico">Contato</span></a></li>
-          <li><a href="sobre.html"><span class="menu-pico">Quem somos</span></a></li>
+          <li><a class="menu-pico" href="index.html"><span>Início</span></a></li>
+          <li><a class="menu-pico" href="servicos.html"><span>Criação de sites</span></a></li>
+          <li><a class="menu-pico" href="branding.html"><span>Branding</span></a></li>
+          <li><a class="menu-pico" href="portifolio.html"><span>Portifólio</span></a></li>
+          <li><a class="menu-pico" href="contato.html"><span>Contato</span></a></li>
+          <li><a class="menu-pico" href="sobre.html"><span>Quem somos</span></a></li>
         </ul>
       </nav>
     <button id="theme-button" class="modo-claro" onclick="alterarTema()">
@@ -150,11 +150,11 @@
     <div class="titulo-secao">Portifólio</div>
     <section class="servicos">
         <img src="assets/projetos-home.svg" alt="sorvetes diversos" />
-       
         <div class="texto-servico">
-          <h2>Soluções personalizadas</h2>
-          
-          <p>
+          <div class="titulo-portifolio">
+            <h2>Soluções personalizadas</h2>
+           </div>
+          <p id="portifolio-p">
           Acreditamos que o design de marca é a chave para 
           comunicar a identidade de uma marca de forma clara e eficaz. 
           Seja em branding ou desenvolvimento de sites, trabalhamos 
@@ -168,8 +168,7 @@
     <section class="servicos">
         <div class="texto-servico">
             <h2>Desperte seu negócio!</h2>
-           
-            <p>
+           <p>
             Estamos aqui para ajudá-lo a alcançar seus objetivos de negócios.
             Seja marketing e branding, criação de sites ou landing pages para 
             campanhas ADS. Temos a expertise para impulsionar seu sucesso.

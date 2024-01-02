@@ -101,13 +101,13 @@ a {
   display: flex;
   gap: 0.5rem;
 }
-.menu a {
+.menu-pico{
   display: block;
   padding: 1rem;
-  border-radius: 0.5rem;
 }
-.menu a:hover {
+.menu-pico:hover {
   background:rgba(121, 137, 255, 0.2) ;
+  border-radius: 0.5rem;
 }
 .menu-pico{
   color: #888888;
@@ -386,6 +386,8 @@ a {
         max-width: 1024px;
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .titulo-servico1{
@@ -412,7 +414,7 @@ a {
 
      .texto-servico {
         width: 50%;
-        padding: 50px 40px;
+        padding: 50px 10px;
         display: flex;
         box-sizing: border-box;
         flex-direction: column;
@@ -428,22 +430,20 @@ a {
         margin-top: 10px;
         line-height: 22px;
         letter-spacing: 1px;
+        padding: 10px 5px 10px 15px;
       }
 
       .texto-servico p {
-        padding: 10px 10px;
+        padding: 10px 5px 10px 15px;
         line-height: 22px;
-        margin: 20px 0;
+        margin: 20px 0px;
         font-size: 16px;
         letter-spacing: 1px;
-      }
-      .saber-mais{
-        text-align: left;
       }
 
       .botao-servicos {
         color: #888888;
-        padding: 6px 12px;
+        padding: 6px 8px;
         letter-spacing: 1px;
         text-align: left;
         text-decoration: underline;
@@ -475,6 +475,7 @@ a {
       }
 
       .texto-servico h2 {
+        width: 100%;
         font-size: 35px;
         line-height: 22px;
         text-align: center;
@@ -597,23 +598,32 @@ a {
             width: 100%;
             padding: 50px 10px 20px;
          }
+         .titulo-portifolio h2{
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+         }
 
          .texto-servico {
             width: 100%;
             padding: 0px 10px;
+            box-sizing: border-box;
         }
 
         .texto-servico a{
-            padding: 0px 0 35px ;
+            padding: 0px 0px 35px ;
+            margin: 0px;
           }
 
           .texto-servico p {
-            margin: 10px 0 5px 0;
+            margin: 10px 10px 5px 0px;
             font-size: 18px;
+            justify-content: center;
+            align-items: baseline;
           }
 
           .texto-servico h2 {
-            font-size: 32px;
+            font-size: 29px;
             line-height: 32px;
             text-align: center;
             padding: 50px 20px 5px 20px;
@@ -622,6 +632,7 @@ a {
             padding: 12px;
             margin-left: 25px;
           }
+          
 
         
 
@@ -707,13 +718,14 @@ a {
   opacity: 80%;
 }
 .rodape-conteudo {
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
-  padding: 25px 0;
+  padding: 25px 0px 0px;
 }
 .rodape-conteudo h2 {
   color: #8C4EE8;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   font-size: 20px;
 }
 .rodape-conteudo div {
@@ -778,10 +790,16 @@ background-size: cover;
 border-radius: 4px;
 }
 
-@media(max-width: 780px)
-{
-  .limite-largura {
+@media(max-width: 780px){
+
+  .rodape-parallax5 { 
+    height: 70vh;
+  
+  }
+  .rodape{
       flex-wrap: wrap;
+      gap: 6px;
+      flex: 1;
      
   }
   .container-rodape a {

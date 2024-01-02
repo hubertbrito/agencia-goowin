@@ -107,9 +107,8 @@ a {
   padding: 1rem;
   border-radius: 0.5rem;
 }
-
-.menu :hover {
-  background:rgba(146, 150, 209, 0.1);
+.menu a:hover {
+  background: rgba(57, 70, 212, 0.1);
 }
 
 .btn-menu {
@@ -246,7 +245,7 @@ a {
   
   .texto-banner p {
     margin: 10px auto;
-    font-size: 21px;
+    font-size: 24px;
     color: #8C4EE8;
     font-weight: 800;
   }
@@ -259,7 +258,7 @@ a {
   
   .texto-banner h1 {
     margin: 10px auto;
-    font-size: 32px;
+    font-size: 39px;
     font-weight: 900;
   }
   
@@ -947,14 +946,15 @@ margin-bottom: 12px;
   opacity: 80%;
 }
 .rodape-conteudo {
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
-  padding: 25px 0;
+  padding: 25px 0px 0px;
 }
 .rodape-conteudo h2 {
   color: #8C4EE8;
-  margin: 0 0 15px 0;
-  font-size: 18px;
+  margin: 0 0 10px 0;
+  font-size: 20px;
 }
 .rodape-conteudo div {
   display: flex;
@@ -986,11 +986,11 @@ margin-bottom: 12px;
   text-decoration: underline;
 }
 .links-rodape li{ 
- padding: 2px 2px;
+ padding: 2px 0px;
 }
 .container-rodape {
 position: relative;
-padding: 20px 0;
+padding: 20px 10px;
 line-height: 34px;
 letter-spacing: 1px;
 font-weight: 600;
@@ -1005,11 +1005,11 @@ color: #F6F4EC;
 }
 .container-rodape a {
 display: inline-block;
-width: 60px;
-height: 60px;
+width: 80px;
+height: 80px;
 position: absolute;
-bottom: 80px;
-right: 50px;
+bottom: 100px;
+right: 40px;
 
 background-image: url("assets/seta-para-cima.png");
 background-position: center;
@@ -1018,10 +1018,16 @@ background-size: cover;
 border-radius: 4px;
 }
 
-@media(max-width: 780px)
-{
-  .limite-largura {
+@media(max-width: 780px){
+
+  .rodape-parallax5 { 
+    height: 70vh;
+  
+  }
+  .rodape{
       flex-wrap: wrap;
+      gap: 6px;
+      flex: 1;
      
   }
   .container-rodape a {
@@ -1030,8 +1036,8 @@ border-radius: 4px;
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: 100px;
-    right: 25px;
+    bottom: 120px;
+    right: 10px;
 
   }
   .buttonzap{
@@ -1070,4 +1076,4 @@ border-radius: 4px;
   box-shadow: 2px 2px 20px #5fe690;
 }
 
-      
+     
