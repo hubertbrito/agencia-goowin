@@ -29,12 +29,8 @@
           aria-controls="menu"
           aria-expanded="false"
         >
-          Menu<span class="hamburger"></span>
+          <span class="hamburger"></span>
         </button>
-        <!-- <input type="checkbox" id="checkbox" class="checkbox" />
-        <label for="checkbox" class="label-menu"
-          >Menu<span class="hamburger"></span
-        ></label> -->
         <ul class="menu" id="menu" role="menu">
           <li><a class="menu-pico" href="index.html"><span>Início</span></a></li>
           <li><a class="menu-pico" href="servicos.html"><span>Criação de sites</span></a></li>
@@ -51,54 +47,70 @@
     </header>
     <section class="secao-banner" id="banner">
 	    <div class="texto-banner">
-        <h1>Agência de Branding</h1>
+       <div>
         <div class="logo-banner">
-          <img src="assets/teste-logo-vet-01.png" alt="Logo" id="topo-logo">
+          <div class="container-conjunto">
+            <img class="conjunto-logo" src="assets/conjuntologo.png" alt="">
+          </div>
+          <div>
+            <img src="assets/logo-clara-bola-roxa.png" alt="Logo" id="topo-logo">
+          </div>
         </div>
-        <p>Marketing Branding<br>Site/UI/UX</p>
-        <h2>A presença digital do seu negócio começa aqui!</h2>
+        <div>
+          <h1>Marketing, branding e Desenvolvimento de sites <br> para sua empresa</h1>
+        </div>
       </div>
-	</section>
-
-	<section class="secao-bemVindos">
-		<div class="container-bemVindos">
-        <h2>Bem-vindos a GooWin</h2>
-  		<p class="primeiro-paragrafo">
-			Somos uma empresa especializada em oferecer soluções integradas de
- 			 marketing, comunicação e tectologia. Nosso objetivo é ser a escolha numero um
- 			 para empreendedores que querem se desenvolver e conquistar posicionamento
- 			 estratégico no mercado digital.
-			</p>
-		  	
-		  </div>
-	</section>
+      <div class="cards-banner">
+        <div class="borda-card">
+          <div class="caixa-gradiente">
+            <div class="texto-gradiente1"><h3>Web design</h3></div>
+          </div>
+        </div>
+        <div class="borda-card">
+          <div class="caixa-gradiente">
+            <div class="texto-gradiente2"><h3>Branding</h3></div>
+          </div>
+        </div>
+        <div class="borda-card">
+          <div class="caixa-gradiente">
+            <div class="texto-gradiente3"><h3>Marketing</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="missao-section">
+       
+    <div class="texto-missao">
+      <p>Nosso objetivo é ser a escolha numero um
+ 			  para empreendedores que querem se desenvolver e conquistar posicionamento
+ 			  estratégico no mercado digital.</p>
+    </div>
+    <img id="sobre" src="assets/grafismo.png" alt="pessoas comendo sorvete" />
+  </section>
 	<section class="secao-apresentacao">
 		<div class="secao-topicos">
 
 			<div class="titulo-topicos">
-			 <h3>O que podemos fazer pela sua empresa?</h3>
+			 <h3>O que podemos fazer pela sua <span> empresa </span> ?</h3>
 			</div>
 		  
 		  <div class="cards-topicos">
 		  
+      <div class="mini-card">
+        <div class="icone"><img  class="icones-topicos" src="assets/2.png" /></div>
+        <div class="topico-servico"><h4>Sites</h4></div>
+      </div>
 			<div class="mini-card">
 			  <div class="icone"><img class="icones-topicos" src="assets/1.png" /></div>
-			  <div class="topico-servico"><h4>Sites</h4></div>
-			</div>
-			<div class="mini-card">
-			  <div class="icone"><img  class="icones-topicos" src="assets/2.png" /></div>
 			  <div class="topico-servico"><h4>Branding e <br/>comunicação</h4></div>
 			</div>
 			<div class="mini-card">
 			  <div class="icone"><img  class="icones-topicos" src="assets/3.png" /></div>
 			  <div class="topico-servico"><h4>Estratégia de <br/>marketing</h4></div>
 			</div>
-			<div class="mini-card">
-			  <div class="icone"><img  class="icones-topicos" src="assets/4.png" /></div>
-			  <div class="topico-servico"><h4>Anúncios e<br/>performance</h4></div>
-			</div>
-		  </div>
-		  </div> 
+		</div>
+	</div> 
 	</section>
     <div class="titulo-secao">Serviços</div>
     <section class="servicos">
@@ -151,10 +163,10 @@
     <section class="servicos">
         <img src="assets/projetos-home.svg" alt="sorvetes diversos" />
         <div class="texto-servico">
-          <div class="titulo-portifolio">
+          
             <h2>Soluções personalizadas</h2>
-           </div>
-          <p id="portifolio-p">
+           
+          <p>
           Acreditamos que o design de marca é a chave para 
           comunicar a identidade de uma marca de forma clara e eficaz. 
           Seja em branding ou desenvolvimento de sites, trabalhamos 
@@ -184,23 +196,23 @@
               <form id="formzap">
             <label>
                 Nome:
-                <input type="text" name="nome" id="nome" />
+                <input type="text" name="nome" id="nome" required/>
             </label>
             <label>
                 Email:
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required/>
             </label>
             <label>
                 Telefone:
-                <input type="tel" name="telefone" id="telefone" />
+                <input type="tel" name="telefone" id="telefone" required/>
             </label>
             <label>
                 Nome da Empresa:
-                <input type="text" name="nomeEmpresa" id="nomeEmpresa" />
+                <input type="text" name="nomeEmpresa" id="nomeEmpresa" required/>
             </label>
             <label>
                 Tipo de Serviço:
-                <select name="servico" id="servico">
+                <select name="servico" id="servico" required>
                     <option value="marketing">Marketing e Branding</option>
                     <option value="site">Criação de Site</option>
                     <option value="ads">Campanhas ADS</option>
@@ -208,39 +220,12 @@
             </label>
             <label>
                 Mensagem:
-                <textarea name="mensagem" id="mensagem"></textarea>
+                <textarea name="mensagem" id="mensagem" required></textarea>
             </label>
             <input type="submit" value="Enviar" onclick="enviarParaWhatsApp()" />
         </form>
         </div>
     </section>
-    <div class="titulo-secao">Quem somos</div>
-    <section class="servicos">
-        <img id="sobre" src="assets/sobre-home.jpg" alt="pessoas comendo sorvete" />
-        <div class="texto-servico">
-          <h2>Um pouco sobre nós</h2>
-         
-          <p>
-            A GooWin é uma agência de branding e design digital que nasceu da 
-            paixão de Maysa Carvalho pelo design e pelo empreendedorismo. 
-            Nós ajudamos empreendedores a se desenvolverem e conquistarem 
-            posicionamento estratégico no mercado digital, criando conexões 
-            emocionais com o público e gerando valor para os negócios.
-
-            Nossa História Em 2022, Maysa Carvalho formou uma equipe 
-            multidisciplinar, capaz de atender às demandas de diferentes 
-            segmentos e projetos. Desde então, a GooWin vem desenvolvendo estratégias de 
-            branding, identidades visuais, sites, aplicações web, campanhas digitais 
-            e muito mais. A GooWin se dedica para entregar resultados de qualidade, 
-            criatividade e inovação, sempre buscando superar as expectativas dos 
-            clientes e criar relacionamentos duradouros.
-
-            E você, quer fazer parte dessa história? Entre em contato conosco e 
-            vamos conversar sobre as melhores soluções para o seu projeto. 
-            Estamos te esperando! 😊
-          </p>
-        </div>
-      </section>
       <footer>
         <div class="rodape-parallax5"> 
           <div class="rodape limite-largura">
@@ -260,32 +245,46 @@
             <div class="rodape-conteudo">
                 <h2>Contato</h2>
                 <div>
+                  <a href="https://www.google.com/maps/place/Rio+de+Janeiro,+RJ" target="_blank">
                     <img src="assets/local.png" title="Ícone local" alt="Ícone local">
                     <span>Rio de Janeiro, RJ</span>
+                  </a>
                 </div>
+                
                 <div>
+                  <a href="tel:+21999999999" tel="+21999999999">
                     <img src="assets/telefone.png" title="Ícone telefone" alt="Ícone telefone">
                     <span>Telefone: (21) 9999-9999</span>
+                  </a>
                 </div>
                 <div>
+                  <a href="mailto:contato@agencia.com.br">
                     <img src="assets/email.png" title="Ícone email" alt="Ícone email">
                     <span>Email: contato@agencia.com.br</span>
+                  </a>
                 </div>
+                
             </div>
            
             <div class="rodape-conteudo">
                 <h2>Nossas Redes Sociais</h2>
                 <div>
+                  <a href="https://www.facebook.com/AgenciaGooWin.digital" target="_blank">
                     <img src="assets/fb.png" title="Ícone facebook" alt="Ícone facebook">
                     <span>/AgenciaGooWin.digital</span>
+                </a>
                 </div>
                 <div>
+                  <a href="https://www.instagram.com/AgenciaGooWin.digital" target="_blank">
                     <img src="assets/ig.png" title="Ícone instagram" alt="Ícone instagram">
                     <span>@AgenciaGooWin.digital</span>
+                </a>
                 </div>
                 <div>
+                  <a href="https://twitter.com/AgenciaGooWin.digital" target="_blank">
                     <img src="assets/tt.png" title="Ícone twitter" alt="Ícone twitter">
                     <span>@AgenciaGooWin.digital</span>
+                </a>
                 </div>
             </div>
         </div>
