@@ -352,9 +352,9 @@ a {
 .texto-missao{
   width: 50%;
   padding: 50px 5px 10px 25px;
-  line-height: 22px;
+  line-height: 24px;
   margin: 20px 0px;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -373,6 +373,10 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-image: url('');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .secao-topicos{
   width: 100%;
@@ -395,14 +399,15 @@ a {
   color: #8C4EE8;
 }
 .mini-card {
-  width: 160px;
-  height: 150px;
+  width: 230px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid #F1068B;   
+  border: 1px solid #F1068B; 
+  background-color: #25282A;  
 }
 .cards-topicos {
   width: 80%;
@@ -410,12 +415,12 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px;
   padding: 10px;
   justify-content: space-evenly;
 }
 .icones-topicos{
-  width: 100px;
+  width: 150px;
 }
 .titulo-topicos {
   width: 30%;
@@ -767,18 +772,19 @@ border: 1px solid #B2987D;
 .rodape-parallax5 {
   margin-top: 40px;  
   height: 60vh;
-  background-image: url("assets/rodape.jpg");
+  background-image: url("assets/rodape.png");
   position: relative;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed; 
+  background-repeat: no-repeat;
 }
 .rodape {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   background-color: #000000;
-  opacity: 80%;
+  opacity: 66%;
 }
 .rodape-conteudo {
   max-width: 1024px;
