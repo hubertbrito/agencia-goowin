@@ -398,39 +398,65 @@ input:-webkit-autofill {
 
 
 
- /*  rodape */
+/*  rodape */
 .rodape-parallax5 {
-  margin-top: 40px;  
-  height: 60vh;
-  background-image: url("assets/rodape.jpg");
+  display: flex;
+  margin-top: 50px;  
+  height: 80%;
+  background-image: url("assets/rodape.png");
   position: relative;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; 
+  background-repeat: no-repeat;
 }
 .rodape {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
   margin: 0 auto;
-  background-color: #000000;
-  opacity: 80%;
+  background-color: #25282A;
+  opacity: 70%;
+}
+.logo-rodape{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nome-logo-rodape{
+  width: 160px;
+  padding-left: 9px;
+}
+.conjunto-logo-rodape{
+  width: 39px;
+  margin-bottom: -15px;
 }
 .rodape-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.rodape-conteudo ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+}
+.rodape-conteudo a {
+  display: flex;
+  align-items: center;
+}
+.rodape-conteudo-links{
   max-width: 1024px;
   display: flex;
   flex-direction: column;
-  padding: 25px 0px 0px;
+  padding: 80px 0px 60px;
+  color: #8C4EE8;
 }
 .rodape-conteudo h2 {
   color: #8C4EE8;
-  margin: 0 0 10px 0;
-  font-size: 20px;
+  margin: 0 0 5px 0;
+  font-size: 18px;
 }
-.rodape-conteudo div {
-  display: flex;
-  align-items: center;
-  margin: 5px 0;
-}
+
 .rodape-conteudo img {
   width: 18px;
 }
@@ -447,7 +473,6 @@ input:-webkit-autofill {
   color: #F6F4EC;
 }
 .links-rodape { /* tag <ul> */
-  max-width: 268px;
   margin: 0 auto;
   list-style: none;
 }
@@ -460,13 +485,11 @@ input:-webkit-autofill {
 }
 .container-rodape {
 position: relative;
-padding: 20px 10px;
-line-height: 34px;
+padding: 15px 10px;
 letter-spacing: 1px;
-font-weight: 600;
-font-family: "Lato", sans-serif;
+font-weight: 500;
 text-align: center;
-background-color: #000000;
+background-color: #25282A;
 color: #8C4EE8;
 }
 
@@ -475,10 +498,10 @@ color: #F6F4EC;
 }
 .container-rodape a {
 display: inline-block;
-width: 80px;
-height: 80px;
+width: 60px;
+height: 60px;
 position: absolute;
-bottom: 100px;
+bottom: 80px;
 right: 40px;
 
 background-image: url("assets/seta-para-cima.png");
@@ -491,28 +514,52 @@ border-radius: 4px;
 @media(max-width: 780px){
 
   .rodape-parallax5 { 
-    height: 70vh;
+    height: 88vh;
+    flex-direction: column;
   
+  }
+  .logo-rodape{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nome-logo-rodape{
+    width: 160px;
+    padding-left: 10px;
+  }
+  .conjunto-logo-rodape{
+    width: 43px;
   }
   .rodape{
       flex-wrap: wrap;
-      gap: 6px;
-      flex: 1;
-     
+      gap: 1px;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 0px 0px;
+  }
+  .rodape-conteudo {
+    margin: 0 auto;
+    padding: 0px 0px 0px;
+    width: 100%;
+  }
+  .rodape-conteudo-links{
+    padding: 15px 0px 5px;
   }
   .container-rodape a {
-    z-index: 1000;
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    bottom: 120px;
-    right: 10px;
+    bottom: 300px;
+    right: 25px;
 
   }
   .buttonzap{
     display: none;
   }
+
 }
    
 
@@ -545,5 +592,3 @@ border-radius: 4px;
   font-weight: 900;
   box-shadow: 2px 2px 20px #5fe690;
 }
-
-     
