@@ -279,8 +279,9 @@ a {
   padding-left: 150px;
 }
 .texto-banner h2 {
-  font-size: 20px;
+  font-size: 21px;
   text-align: left;
+  font-weight: 500;
 }
 .texto-banner span{
   color: #8C4EE8;
@@ -298,21 +299,19 @@ a {
     .secao-banner {
       flex-direction: column-reverse;
       width: auto;
-      height: 60vh;
-      margin-top: 60px;
+      height: 70vh;
     }
     .container-banner{
       max-width: 1135px;
       display: flex;
       justify-content: center;
       align-items: center;
-
       flex-direction: column-reverse;
     }
     .circulos-banner{
       width: 100%;
       text-align: left;
-      padding-left: 25px;
+      padding-left: 33px;
     }
     .circulos-banner img{
       width: 45px;
@@ -357,8 +356,8 @@ a {
   .servico-secao1-texto{
     padding: 40px 20px;
     width: 100%;
-    background-color: #edeff1;
     border-radius: 15px;
+    border: 1px solid #bdbdbd;
   }
   .title-solucoes {
     padding: 0 0 0 28px;
@@ -366,7 +365,7 @@ a {
     color:#8C4EE8;
   }
   .subtitle-solucoes {
-    color: #25282A;
+    color: #888888;
     padding: 0px 0 12px 28px;
     font-size: 22px;
   }
@@ -374,7 +373,7 @@ a {
     padding: 0px 0 0 28px;
     font-size: 18px;
     font-weight: 500;
-    color: #25282A;
+    color: #888888;
 }
 
 @media screen and (max-width: 780px){

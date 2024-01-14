@@ -54,7 +54,7 @@ body.dark-mode {
 /* div da logo topo */
 .div-logo-topo{
   display: flex;
-  gap: 4px;
+  gap: 1px;
   justify-content: center;
   align-items: center;
 }
@@ -139,9 +139,9 @@ a {
   }
 
   #topo-logo {
-      margin-left: 15px;
+      margin-left: 5px;
       width: 100px;
-    }
+  }
      /* div da logo topo */
 .div-logo-topo{
   display: flex;

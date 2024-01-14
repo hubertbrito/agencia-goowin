@@ -259,12 +259,6 @@ a {
 .texto-banner span{
   color: #8C4EE8;
 }
-
-.texto-banner p {
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: 800;
-}
 .texto-banner h1 {
   font-size: 22px;
   font-weight: 800;
@@ -356,9 +350,7 @@ a {
   padding: 50px 5px 10px 25px;
   line-height: 24px;
   margin: 20px 0px;
-  font-size: 21px;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 18px;
 }
 .missao-section img {
   width: 28%;
@@ -366,159 +358,7 @@ a {
   height: auto;
   object-fit: cover;
 }
-  /* seção Topicos de serviços  */
-.secao-apresentacao {
-  max-width: 1024px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 50px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  background-image: url('');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.secao-topicos{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.titulo-topicos {
-  width: 100%;
-  font-size: 29px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.titulo-topicos h3{
-  font-size: 22px;
-  background-color: #edeff1;
-  border-radius: 15px;
-  width: 693px;
-  padding: 50px 30px;
-  color: #25282A;
-  margin-bottom: -10px;
-} 
-.titulo-topicos span{
-  color: #8C4EE8;
-}
-
-.mini-card1 {
-  width: 192px;
-  height: 208px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fce6ce;
-  color: #25282A;  
-  border-radius: 15px;
-}
-.mini-card2 {
-  width: 192px;
-  height: 208px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #ffdcf0;
-  color: #25282A;  
-  border-radius: 15px;
-}
-.mini-card3 {
-  width: 192px;
-  height: 208px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #ecdcff;
-  color: #25282A;  
-  border-radius: 15px;
-}
-.cards-topicos {
-  width: 80%;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 4px;
-  padding: 10px;
-  justify-content: space-evenly;
-}
-.icones-topicos{
-  width: 120px;
-  margin-top: -30px;
-}
-.titulo-topicos {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  padding: 20px 1px;
-}
-.topico-servico1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 173px;
-  height: 70px;
-  margin-bottom: -26px;
-  padding: 0 8px;
-  background-color: #fff2e3;
-  border-radius: 15px;
-}
-.topico-servico2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 173px;
-  height: 70px;
-  margin-bottom: -26px;
-  padding: 0 8px;
-  background-color: #ffeff9;
-  border-radius: 15px;
-}
-.topico-servico3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 173px;
-  height: 70px;
-  margin-bottom: -26px;
-  padding: 0 8px;
-  background-color: #f6f2fc;
-  border-radius: 15px;
-}
-h5{
-  font-size: 18px;
-}
-.mini-card div {
-  text-align: center;
-}
-/* fim apresentaçao */
-
-.titulo-secao {
-  margin: 0 auto;
-  max-width: 1024px;
-  text-align: left;
-  padding-top: 5px;
-  border-left: 4px solid #8C4EE8;
-  font-size: 22px;
-  font-weight: bold;
-  padding-left: 10px;
-}
-
+ 
 /* secao servicos */
 .servicos {
   margin: 0 auto;
@@ -883,6 +723,12 @@ textarea {width: 100%;
     font-size: 14px;
     margin-bottom: 15px;
   }
+  #buttonEnviar {
+    background-color: #F1068B;
+    color: #d7d7d7;
+    margin-top: 10px;
+    border-radius: 8px;
+    }
 
 
   #theme-button  {
@@ -910,13 +756,13 @@ textarea {width: 100%;
   background-size: cover;
   background-attachment: fixed; 
   background-repeat: no-repeat;
+  background-color: #25282A;
+  opacity: 90%;
 }
 .rodape {
   display: flex;
   justify-content:space-evenly;
   margin: 0 auto;
-  background-color: #25282A;
-  opacity: 70%;
 }
 .logo-rodape{
   display: flex;
