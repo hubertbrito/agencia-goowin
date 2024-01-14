@@ -240,33 +240,46 @@
         <form id="formzap">
           <label>
             Nome:
-            <input type="text" name="nome" id="nome" required />
+            <div class="contain-inputtext">
+              <input  type="text" name="nome" id="nome" required />
+            </div>
           </label>
           <label>
             Email:
-            <input type="email" name="email" id="email" required />
+            <div class="contain-inputtext">
+              <input type="email" name="email" id="email" required />
+            </div>
           </label>
           <label>
             Telefone:
-            <input type="tel" name="telefone" id="telefone" required />
+            <div class="contain-inputtext">
+              <input type="tel" name="telefone" id="telefone" required />
+            </div>
           </label>
           <label>
             Nome da Empresa:
+           <div class="contain-inputtext">
             <input type="text" name="nomeEmpresa" id="nomeEmpresa" required />
+           </div>
           </label>
           <label>
             Tipo de Serviço:
-            <select name="servico" id="servico" required>
-              <option value="marketing">Marketing e Branding</option>
-              <option value="site">Criação de Site</option>
-              <option value="ads">Campanhas ADS</option>
-            </select>
+            <div class="contain-inputtext">
+              <select name="servico" id="servico" required>
+                <option value="marketing">Marketing e Branding</option>
+                <option value="site">Criação de Site</option>
+                <option value="ads">Campanhas ADS</option>
+              </select>
+            </div>
+           
           </label>
           <label>
             Mensagem:
+           <div class="contain-inputtext">
             <textarea name="mensagem" id="mensagem" required></textarea>
+           </div>
           </label>
-          <input type="submit" value="Enviar" onclick="enviarParaWhatsApp()" />
+          <button id="buttonEnviar" type="submit" value="Enviar" onclick="enviarParaWhatsApp()">Enviar</button>
         </form>
       </div>
     </section>

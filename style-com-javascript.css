@@ -619,6 +619,7 @@ h5{
   text-align: center;
   padding-top: 20px;
 }
+
 /* form */
 .container-form {
   width: 50%;
@@ -626,43 +627,79 @@ h5{
   justify-content: center;
   align-items: center;
 }
-
 form {
   width: 60%;
-  background-color: #F6F4EC;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 15px 2px #B2987D;
 }
-
 label {
+  margin: 0;
   font-size: 12px;
-  color: #25282A;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+input{
+  width: 99%;
+  margin-bottom: 20px;
+  padding: 12px 3px 0px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+}
+input, select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--color-background) inset;
 }
 
-input, select, textarea {
-border: 1px solid #B2987D;
+/* Cor do texto do autocomplete */
+input, select:-webkit-autofill {
+  -webkit-text-fill-color: #bcbcbc !important;
+}
+.contain-inputtext{
+  border-bottom: 1px solid #888888;
+  width: 100%;
+  margin-bottom: 18px;
+  margin-top: 3px;
+}
+select {
+  background-color: transparent;
   width: 100%;
   padding: 5px;
   margin-bottom: 0px;
   box-sizing: border-box;
-  background-color: #F6F4EC;
-  border-radius: 8px;
-
+  color: #959ca0;
+  
 }
-
-input[type="submit"] {
-border: 1px solid #B2987D;
-  padding: 6px 12px;
-  font-weight: 600;
-  background-color: #8C4EE8;
-  color: #F6F4EC;
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
+textarea {width: 100%;
+  margin-bottom: 20px;
+  padding: 0 0 10px;
+  border: none;
+  background-color: transparent;
+  color: #9d9d9d;
+}
+#buttonEnviar {
+  width: 100%;
+  font-size: 16px;
+  background-color: #e2e3e9;
+  color: #c0bdbd;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 8px;
-  letter-spacing: 2px;
 }
+#buttonEnviar:hover {
+  font-size: 16px;
+  background-color: #ff78c5;
+  color: #F6F4EC;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* fim form */
 
 
@@ -688,6 +725,7 @@ border: 1px solid #B2987D;
   }
 
   .texto-banner {
+    margin-top: 120px;
     width: 100%;
     padding: 10px 12px;
   }
@@ -833,6 +871,7 @@ border: 1px solid #B2987D;
     padding: 25px 0px 0px;
   }
 
+  /* responsivo form */
   .container-form {
     width: 100%;
     margin: 30px 0px;
@@ -844,6 +883,8 @@ border: 1px solid #B2987D;
     font-size: 14px;
     margin-bottom: 15px;
   }
+
+
   #theme-button  {
     display: flex;
     align-items: center;

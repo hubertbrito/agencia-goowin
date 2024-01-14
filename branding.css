@@ -51,7 +51,19 @@ body.dark-mode {
   width: 150px;
  
 }
-
+/* div da logo topo */
+.div-logo-topo{
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
+}
+.icone-logo-banner{
+  width: 36px;
+  margin-bottom: -15px;
+}
+/* fim div da logo topo */
 
 a {
   color: #FF8C20;
