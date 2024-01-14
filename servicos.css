@@ -55,14 +55,13 @@ body.dark-mode {
 /* div da logo topo */
 .div-logo-topo{
   display: flex;
-  gap: 6px;
+  gap: 4px;
   justify-content: center;
   align-items: center;
-  margin-bottom: -15px;
 }
 .icone-logo-banner{
-  width: 36px;
-  margin-bottom: -15px;
+  width: 33px;
+  margin-bottom: -19px;
 }
 /* fim div da logo topo */
 
@@ -149,13 +148,13 @@ a {
     /* div da logo topo */
 .div-logo-topo{
   display: flex;
-  gap: 1px;
+  gap: 3px;
   justify-content: center;
   align-items: center;
 }
 .icone-logo-banner{
-  width: 36px;
-  margin-bottom: -15px;
+  width: 27px;
+  margin-bottom: -13px;
 }
 
   .menu {
@@ -268,20 +267,19 @@ a {
   text-align: center;
 }
 .circulos-banner img{
-  width: 112px;
+  width: 96px;
 }
 .texto-banner {
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: baseline;
   text-align: left;
   padding-left: 150px;
 }
 .texto-banner h2 {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 20px;
   text-align: left;
 }
 .texto-banner span{
@@ -704,9 +702,8 @@ letter-spacing: 1px;
   max-width: 1024px;
   text-align: center;
   padding: 12px 15px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 1px;
 }
 .nome-wida{
   padding-top: 40px;

@@ -54,14 +54,13 @@ body.dark-mode {
 /* div da logo topo */
 .div-logo-topo{
   display: flex;
-  gap: 6px;
+  gap: 4px;
   justify-content: center;
   align-items: center;
-  margin-bottom: -15px;
 }
 .icone-logo-banner{
-  width: 36px;
-  margin-bottom: -15px;
+  width: 33px;
+  margin-bottom: -19px;
 }
 /* fim div da logo topo */
 
@@ -143,6 +142,17 @@ a {
       margin-left: 15px;
       width: 100px;
     }
+     /* div da logo topo */
+.div-logo-topo{
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.icone-logo-banner{
+  width: 27px;
+  margin-bottom: -13px;
+}
 
   .menu {
     display: block;
