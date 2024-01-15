@@ -359,32 +359,27 @@ a {
     border-radius: 15px;
     border: 1px solid #bdbdbd;
   }
-  .title-solucoes {
-    padding: 0 0 0 28px;
-    font-size: 29px;
-    color:#8C4EE8;
-  }
   .subtitle-solucoes {
-    color: #888888;
+    color:rgb(135, 140, 147);
     padding: 0px 0 12px 28px;
     font-size: 22px;
   }
   .servico-secao1 p {
-    padding: 0px 0 0 28px;
+    padding: 0 0 0 28px;
     font-size: 18px;
     font-weight: 500;
-    color: #888888;
+    color: rgb(135, 140, 147);
 }
 
 @media screen and (max-width: 780px){
   .servico-secao1 {
     flex-direction: column;
     gap: 10px;
-    padding: 12px;
+    padding: 16px;
     max-width: 100vw;
   }
   .servico-secao1-texto{
-    padding: 4px;
+    padding: 8px 4px;
     width: 100%;
   }
  
@@ -397,18 +392,13 @@ a {
     width: 100%;
     height: auto;
   }
-.title-solucoes {
-    padding: 8px;
-    font-size: 26px;
-    color:#8C4EE8;
-    letter-spacing: 1px;
-}
+
 .subtitle-solucoes {
-    padding: 8px;
+    padding: 8px 14px;
     font-size: 22px;
   }
 .servico-secao1 p {
-    padding: 8px;
+    padding: 8px 14px;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -557,7 +547,7 @@ tr:nth-child(even) {
 }
 
 .container {
-  padding: 20px 8px;
+  padding: 20px 5px;
   width: 100%;
   margin: 0 auto;
   margin-top: 30px;
@@ -571,7 +561,7 @@ tr:nth-child(even) {
 }
 
 .card-produto {
-  padding: 0 15px;
+  padding: 0 10px;
   display: flex;
   width: auto;
   border-radius: 1px;
@@ -594,7 +584,7 @@ tr:nth-child(even) {
 .container-info {
   width: 100%;
   text-align: left;
-  padding: 30px 15px 5px 15px;
+  padding: 30px 10px 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -697,15 +687,15 @@ letter-spacing: 1px;
        
 .subtitulo {
   margin: 0 auto;
-  margin-top: 40px;
+  margin: 30px 0 5px;
   max-width: 1024px;
   text-align: center;
-  padding: 12px 15px;
+  padding: 12px 25px;
   font-size: 18px;
   font-weight: 500;
 }
 .nome-wida{
-  padding-top: 40px;
+  padding: 25px 0 0;
   font-size: 32px;
   margin: 0 auto;
   text-align: center;
@@ -801,7 +791,7 @@ letter-spacing: 1px;
       justify-content: center;
       align-items: center ;
       padding: 12px;
-      font-size: 24px; 
+      font-size: 22px; 
       font-weight: 900;
       width: 100%;
       text-align: center;
@@ -1089,7 +1079,6 @@ border-radius: 4px;
   .rodape-parallax5 { 
     height: 88vh;
     flex-direction: column;
-  
   }
   .logo-rodape{
     margin-top: 40px;

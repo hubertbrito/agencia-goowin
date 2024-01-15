@@ -275,6 +275,9 @@ a {
     justify-content: center;
     align-items: center;
   }
+  .img-aneis img {
+    width: 70px;
+  }
   .parallax-4 {
     background-image: url("assets/virtual-reality.jpg");
     position: relative;
@@ -360,7 +363,7 @@ a {
     max-width: 1024px;
     font-size: 18px;
     margin-top: 20px;
-    padding: 12px;
+    padding: 25px;
     letter-spacing: 1px;
     line-height: 22px;
   }
