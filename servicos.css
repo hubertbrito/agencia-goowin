@@ -684,6 +684,14 @@ letter-spacing: 1px;
   padding: 1px;
 }       
 /* Estilos específicos */
+.method-wid{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
        
 .subtitulo {
   margin: 0 auto;
@@ -693,6 +701,7 @@ letter-spacing: 1px;
   font-size: 18px;
   font-weight: 500;
 }
+
 .nome-wida{
   padding: 25px 0 20px;
   font-size: 32px;
