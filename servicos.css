@@ -687,7 +687,6 @@ letter-spacing: 1px;
        
 .subtitulo {
   margin: 0 auto;
-  margin: 30px 0 5px;
   max-width: 1024px;
   text-align: center;
   padding: 12px 25px;
@@ -695,7 +694,7 @@ letter-spacing: 1px;
   font-weight: 500;
 }
 .nome-wida{
-  padding: 25px 0 0;
+  padding: 25px 0 20px;
   font-size: 32px;
   margin: 0 auto;
   text-align: center;
