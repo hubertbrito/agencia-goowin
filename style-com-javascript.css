@@ -768,12 +768,14 @@ textarea {width: 100%;
   background-attachment: fixed; 
   background-repeat: no-repeat;
   background-color: #25282A;
-  opacity: 80%;
+  opacity: 99%;
 }
 .rodape {
   display: flex;
   justify-content:space-evenly;
   margin: 0 auto;
+  background-color: #25282A;
+  opacity: 70%;
 }
 .logo-rodape{
   display: flex;
