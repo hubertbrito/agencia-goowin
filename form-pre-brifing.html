@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="A Agência de Viagens encontra o hotel certo pra você!"
+      content="Briefing para Criação de projeto do Website"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agência de viagens</title>
@@ -22,7 +22,10 @@
         </div>
           <img src="assets/logo-preta-bola-roxa.png" alt="Logo" id="topo-logo">
       </div>
-        <p class="topo-titulo">Briefing para Criação de Website</p>
+      <div class="topo-titulo">
+        <p>Briefing para Criação de Website</p>
+      </div>
+      
       </div>
     </header>
     <main>
@@ -30,18 +33,21 @@
         <div class="orcamento-area limite-largura">
           <div class="orcamento-cabecalho">
             <img class="orcamento-logo" src="./assets/checklist-brifing.png" title="" alt="" />
-            <h1 class="orcamento-descricao">
+           <div class="orcamento-descricao">
+            <h1>
               Por favor preencha as informações no formulário para começar
               organizar o projeto do seu site
             </h1>
+           </div>
           </div>
           <div class="orcamento-area-formulario">
             <p class="orcamento-subtitulo-formulario">
               Preencha os dados mas não se preocupe, pois muitas informações
               poderão ser alteradas durante o processo de criação do projeto do
               seu site. Essas informações serão importantes principalmente para
-              processo inicial de análise e orçamento. <br>
-              <h4>Próximos Passos:</h4><br>
+              processo inicial de análise e orçamento.</p> <br>
+              <h5>Próximos Passos:</h5>
+             <p class="orcamento-subtitulo-formulario"><br>
               Após o recebimento do briefing, entraremos em contato para 
               apresentar um pré-orçamento e um cronograma para o projeto.
               Se aprovado agendaremos uma call para discuti-lo em mais detalhes.
@@ -53,8 +59,11 @@
               
             </p>
             <form method="post" class="formulario">
-              <label id="titulo-label" for="nome">Nome da empresa</label>
-              <input id="nome" placeholder="Nome fantasia" type="text" name="nome" required />
+              <div class='secao-input-text'>
+                <label id="titulo-label" for="nome">Nome da empresa</label>
+                <input id="nome" placeholder="Nome fantasia" type="text" name="nome" required />
+             
+              
 
               <label id="titulo-label" for="ramo"> Ramo de atividade</label>
               <input id="nome" placeholder="Exemplo: Empresa especializada em soluções de energia renovável, comprometida com a sustentabilidade ambiental" 
@@ -89,13 +98,7 @@
               type="text" name="publico-alvo" required />
               <!--Publico alvo-->
 
-             <!--Conteudo-->
-              <label id="titulo-label" for="tipo-conteudo">
-                Quais são as principais informações que você deseja que o website contenha?
-              </label>
-              <textarea id="tipo-conteudo" type="text" name="tipo-conteudo" rows="5" placeholder="Exemplo: Quero que o website contenha informações detalhadas sobre os serviços médicos oferecidos, perfis dos especialistas, informações para agendamento de consultas e uma seção de dúvidas frequentes para orientar os pacientes."
-              required></textarea>
-              <!--Conteudo-->
+             
 
               <!--Conteudo pronto-->
               <label id="titulo-label" for="conteúdo-pronto"
@@ -107,16 +110,26 @@
               type="text" name="conteúdo-pronto" required />
              <!--Conteudo pronto-->
 
+             <!--Conteudo-->
+             <label id="titulo-label" for="tipo-conteudo">
+              Quais são as principais informações que você deseja que o website contenha?
+             </label>
+             <textarea id="tipo-conteudo" type="text" name="tipo-conteudo" rows="5" placeholder="Exemplo: Quero que o website contenha informações detalhadas sobre os serviços médicos oferecidos, perfis dos especialistas, informações para agendamento de consultas e uma seção de dúvidas frequentes para orientar os pacientes."
+             required></textarea>
+             <!--Conteudo-->
+             </div>
+
+             <div class="secao-input-text">
               <!-- Escolhendo datas e o tipo do site-->
               <div class="formulario-campo-duplo">
                 <div>
-                  <label for="inicio"
+                  <label id="titulo-label" for="inicio"
                     >Defina uma previsão data para inicio</label
                   >
                   <input id="inicio" type="date" name="inicio" required />
                 </div>
                 <div>
-                  <label for="entrega"
+                  <label id="titulo-label" for="entrega"
                     >Defina uma previsão data para entrega</label
                   >
                   <input id="entrega" type="date" name="entrega" required />
@@ -124,7 +137,7 @@
               </div>
               <div class="formulario-campo-duplo">
                 <div>
-                  <label for="tipo-site">Escolha o tipo de site</label>
+                  <label id="titulo-label" for="tipo-site">Escolha o tipo de site</label>
                   <select id="tipo-site" name="tipo-site" required>
                     <option selected>Landing page</option>
                     <option value="I">Institucional</option>
@@ -137,7 +150,7 @@
                   </select>
                 </div>
                 <div>
-                  <label for="objetivo"
+                  <label id="titulo-label" for="objetivo"
                     >Defina o principal objetivo do novo website?</label
                   >
                   <select id="objetivo" name="objetivo" required>
@@ -174,32 +187,36 @@
                 </div>
               </div>
               <!-- Escolhendo datas e o tipo do site-->
+              </div>
 
               
-
+              
                <!-- se possui dominio e hospedagem-->
-              <label id="titulo-label">Já possui serciço de hospedagem de site</label>
-              <div class="radio">
-                <div>
-                  <input
-                    id="sim-possuo"
-                    type="radio"
-                    name="hospedagem"
-                    value="s"
-                  />
-                  <label for="sim-possuo">Sim</label>
+               <div class="secao-input-text">
+                <label id="titulo-label">Já possui serciço de hospedagem de site</label>
+                <div class="radio">
+                  <div>
+                    <input
+                      id="sim-possuo"
+                      type="radio"
+                      name="hospedagem"
+                      value="s"
+                    />
+                <label for="sim-possuo">Sim</label>
                 </div>
-                <div>
-                  <input
-                    id="nao-possuo"
-                    type="radio"
-                    name="hospedagem"
-                    value="n"
-
-                  />
-                  <label for="nao-possuo">Não</label>
+                  <div>
+                    <input
+                      id="nao-possuo"
+                      type="radio"
+                      name="hospedagem"
+                      value="n"
+                      />
+                    <label for="nao-possuo">Não</label>
+                  </div>
                 </div>
-              </div>
+               </div>
+             
+               <div class="secao-input-text">
               <label id="titulo-label">Já possui um nome de domínio registrado?</label>
               <div class="radio">
                 <div>
@@ -221,9 +238,11 @@
                   <label for="possuo-dominio">Não</label>
                 </div>
               </div>
+              </div>
                <!-- se possui dominio e hospedagem-->
 
                 <!-- se possui logo e indentidade visual-->
+              <div class="secao-input-text">  
               <label id="titulo-label">A empresa possui logo e identidade visual?</label>
               <div class="radio">
                 <div>
@@ -245,9 +264,11 @@
                   <label for="indentidade-visual">Não</label>
                 </div>
               </div>
+              </div>
               <!-- se possui logo e indentidade visual-->
 
                  <!-- se vai gerenciar o próprio site--->
+              <div class="secao-input-text">   
               <label id="titulo-label">A empresa possui equipe interna para gerenciar o website?</label>
               <div class="radio">
                 <div>
@@ -269,11 +290,13 @@
                   <label for="auto-gerencia">Não</label>
                 </div>
               </div>
+              </div>
                  <!-- se vai gerenciar o próprio site--->
               
 
 
                 <!-- Escolhendo estilo do site-->
+              <div class="secao-input-text">    
               <label id="titulo-label">Escolha alguns estilos para o seu site</label>
               <div class="radio">
                 <div>
@@ -328,7 +351,7 @@
                     name="site_style[]"
                     value="material_design"
                   />
-                  <label for="material_design">Material Design</label>
+                  <label for="material_design">Material<br>Design</label>
                 </div>
                 <div>
                   <input
@@ -432,9 +455,11 @@
                   <label for="sugestoes">Aceito sugestões</label>
                 </div>
               </div>
+              </div>
                <!-- fim estilos do site -->
 
               <!-- seletor de cores -->
+              <div class="secao-input-text">
               <label for="color" id="titulo-label">Selecione as cores para o seu site:</label>              </label>
               <div class="color-picker">
                 <div class="color-selector">
@@ -454,9 +479,11 @@
                   <input type="color" id="color4" value="#000000">
                 </div>
               </div>
+              </div>
              <!-- fim seletor de cores -->
 
                <!-- funcionalidades do site -->
+               <div class="secao-input-text">
               <label id="titulo-label">Funcionalidades:</label>
               <div class="radio">
                 <div>
@@ -476,7 +503,7 @@
                     name="site_functionality[]"
                     value="galerias_imagens"
                   /><label for="galerias_imagens"
-                    >Galerias <br />de Imagens</label
+                    >Carrocel<br/>de Imagens</label
                   >
                 </div>
                 <div>
@@ -511,9 +538,18 @@
                     value="newsletter"
                   /><label for="newsletter">Newsletter</label>
                 </div>
-
-                <!-- Repita para todos os outros valores -->
-              </div><!-- fecha class radio-->
+                <div>
+                  <input
+                    type="checkbox"
+                    id="outras-funcoes"
+                    name="site_functionality[]"
+                    value="outras-funcoes"
+                  /><label for="outras-funcoes">Outras funcoes</label>
+                </div>
+               </div>
+              </div>
+              <!-- Escolha páginas-->
+              <div class="secao-input-text">
               <label id="titulo-label" for="tipo-conteudo">Quais páginas ou seções você 
                 gostaria de ter no seu site?</label>
                 <div class="radio"> 
@@ -549,7 +585,7 @@
                   
                   <div>
                     <input type="checkbox" id="trabalhe-conosco" name="pageType" value="Trabalhe Conosco">
-                    <label for="trabalhe-conosco">Trabalhe Conosco</label>
+                    <label for="trabalhe-conosco">Trabalhe<br>Conosco</label>
                   </div>
 
                   <div>
@@ -558,10 +594,6 @@
                   </div>
                   </div>
                   <div class="radio"> 
-                  <div>
-                    <input type="checkbox" id="produtos-servicos" name="pageType" value="Produtos/Serviços">
-                    <label for="produtos-servicos">Produtos/Serviços</label>
-                  </div>
                   
                   <div>
                     <input type="checkbox" id="faq" name="pageType" value="FAQ">
@@ -569,18 +601,8 @@
                   </div>
                   
                   <div>
-                    <input type="checkbox" id="testemunhos-avaliacoes" name="pageType" value="Testemunhos/Avaliações">
-                    <label for="testemunhos-avaliacoes">Testemunhos</label>
-                  </div>
-                  
-                  <div>
-                    <input type="checkbox" id="galeria-portfolio" name="pageType" value="Galeria/Portfólio">
-                    <label for="galeria-portfolio">Galeria/Portfólio</label>
-                  </div>
-                  
-                  <div>
                     <input type="checkbox" id="suporte-atendimento" name="pageType" value="Suporte/Atendimento ao Cliente">
-                    <label for="suporte-atendimento">Atendimento ao Cliente</label>
+                    <label for="suporte-atendimento">Atendimento <br>ao Cliente</label>
                   </div>
                   
                   <div>
@@ -597,10 +619,14 @@
                     <input type="checkbox" id="politica-privacidade" name="pageType" value="Política de Privacidade">
                     <label for="politica-privacidade">Política de Privacidade</label>
                   </div>
-                  
+                  <div>
+                    <input type="checkbox" id="outros-paginas" name="pageType" value="outros-paginas">
+                    <label for="outros-paginas">e outros tipos</label>
+                  </div>
+                 </div>
                 </div>
-
-
+                  <!-- Escolha páginas-->
+              <div class="secao-input-text">
               <label id="titulo-label">Marque os tipos de conteúdos que 
                 pretende inserir no site:</label>
               <div class="radio" id="site_content">
@@ -620,7 +646,7 @@
                 name="site_content"
                 value="imagens"
               />
-              <label for="imagens">Imagen</label><br />
+              <label for="imagens">Imagem</label><br />
                </div>
                <div>
                 <input
@@ -649,8 +675,20 @@
               />
               <label for="audio">Audio</label><br />
                </div>
-                <!-- Repita para todos os outros valores -->
+               <div>
+                <input
+                type="checkbox"
+                id="outros-tipos"
+                name="outros-tipos"
+                value="outros-tipos"
+              />
+              <label for="outros-tipos">outros-tipos</label><br />
+               </div>
+               </div>
               </div>
+                <!-- Escolha páginas-->
+
+              <div class="secao-input-text">
               <label id="titulo-label">Preferências da hospedagem</label>
               <div class="radio">
                 <div>
@@ -690,7 +728,11 @@
                   <label for="suite">Aceito sugestões</label>
                 </div>
               </div>
-              <button type="submit">Solicitar orçamento</button>
+              </div>
+              <div class="botao">
+                <button type="submit">Solicitar orçamento</button>
+              </div>
+              
             </form>
           </div>
         </div>

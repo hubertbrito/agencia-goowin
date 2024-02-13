@@ -4,17 +4,25 @@
 }
 
 body {
-    background: #80808029;
+    background: #25282A;
     font-family: 'Raleway', sans-serif;
 }
 
 header {
     width: 100%;
-    height: 70px;
+    height: 80px;
     background: #fff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+   
+}
+.secao-input-text{
+    background-color: #ebebeb;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 15px;
 }
 
 .topo {
@@ -52,16 +60,9 @@ header {
 
 .limite-largura
 {
-    max-width: 1024px;
+    max-width: 900px;
 }
 
-.orcamento-fundo {
-    width: 100%;
-    height: auto;
-    background-image: url("../imagens/bahia.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .orcamento-area {
     width: 100%;
@@ -71,12 +72,12 @@ header {
 }
 
 .orcamento-cabecalho {
-    width: 100%;
-    height: 35px;
+    padding: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #5d15d1;
+    border-radius: 10px 10px 0 0;
 }
 
 .orcamento-logo {
@@ -86,25 +87,28 @@ header {
 }
 
 .orcamento-descricao {
-    font-size: 15px;
+
+    font-size: 12px;
     color: #fff;
-    margin: 0 0 0 5px;
+    width: 80%;
 }
 
 
 .orcamento-area-formulario {
-    background: #fff;
+    width: 100%;
+    background: #F6F4EC;
     padding: 30px 25px 20px 25px;
     box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
 }
 
 .orcamento-subtitulo-formulario {
-    margin: 0 20px 24px 20px;
     text-align: left;
     font-size: 14px;
 }
 
 .formulario {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -121,7 +125,7 @@ header {
 
 #titulo-label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
   #tipo-conteudo {
@@ -143,12 +147,20 @@ header {
 .formulario input {
     padding: 0 5px;
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #5d15d1;
 }
 input[type="text"]::placeholder {
     font-style: italic;
     color: #c8c8c8;
     
   }
+
+textarea{
+    max-width: 97%;
+    padding: 10px 0;
+} 
+
 textarea[type="text"]::placeholder {
     font-style: italic;
     color: #c8c8c8;
@@ -188,15 +200,15 @@ textarea[type="text"]::placeholder {
 .radio label {
     margin: 0 0 0 8px;
 }
-
-
-
-
-
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .formulario button {
-    width: 160px;
-    height: 32px;
+    padding: 10px 15px;
     border: none;
+    border-radius: 10px;
     background: #5d15d1;
     font-size: 16px;
     color: #fff;
@@ -226,113 +238,8 @@ textarea[type="text"]::placeholder {
 
 /* select color */
 
-.ofertas-area, .natureza-area {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 32px auto 0 auto;
-}
-
-.ofertas-titulo, .natureza-titulo {
-    font-size: 20px;
-    margin: 0 0 10px 0;
-}
-
-.ofertas-descricao, .natureza-descricao {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0 0 15px 0;
-}
 
 
-.ofertas-descricao span {
-    font-weight: bold;
-}
-
-.ofertas-imagens {
-    width: 100%;
-    height: 375px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.oferta-imagem-destaque {
-    position: relative;
-    width: calc(50% - 10px);
-    height: 100%;
-}
-
-.oferta-quatro-imagens {
-    width: calc(50% - 10px);
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.oferta-quatro-imagens figure {
-    position: relative;
-    width: calc(50% - 10px);
-    height: calc(50% - 10px);
-    margin: 0 6px;
-}
-
-.oferta-imagem-destaque img, .oferta-quatro-imagens img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    background: rgb(0 0 0 / 50%);
-    font-size: 17px;
-    color: #fff;
-
-    padding: 5px 10px;
-    box-sizing: border-box;
-}
-
-.natureza-duas-imagens {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.natureza-imagem {
-    width: calc(50% - 10px);
-    height: 100%;
-}
-
-.natureza-imagem img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.natureza-imagem div {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background: #fff;
-}
-
-.natureza-imagem h3 {
-    font-size: 16px;
-}
-
-.natureza-imagem p {
-    color: grey;
-    font-size: 14px;
-    margin: 15px 0 0 0px;
-}
 
 footer {
     width: 100%;
@@ -377,45 +284,19 @@ footer {
 @media(max-width: 1100px)
 {
     .limite-largura {
-        width: 90%;
+        width: 100%;
     }
 }
 
 @media(max-width: 768px)
 {
-    .color-picker {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-      }
+    .limite-largura {
+        width: 100%;
+    }
+   
    .formulario button {
         width: 100%;
     }
-
-    .ofertas-imagens {
-        height: 100%;
-        flex-direction: column;
-    }
-
-    .oferta-quatro-imagens {
-        width: 100%;
-    }
-
-    .oferta-imagem-destaque, .oferta-quatro-imagens figure {
-        width: 100%;
-        height: 225px;
-        margin: 15px 0 0 0;
-    }
-
-    .natureza-duas-imagens {
-        flex-direction: column;
-    }
-
-    .natureza-imagem {
-        width: 100%;
-        margin: 15px 0 0 0;
-    }
-
     .rodape {
         flex-direction: column;
         align-items: center;
@@ -429,11 +310,21 @@ footer {
 
 @media(max-width: 540px)
 {
-    .color-picker {
+    .limite-largura {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        height: 60px;
+        background: #fff;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-      }
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+       
+    }
+  
     .formulario-campo-duplo, .radio {
         flex-direction: column;
     }
@@ -441,4 +332,9 @@ footer {
     .formulario-campo-duplo div, .radio div {
         width: 100%;
     }
+    .topo-titulo {
+        margin-top: 20px;
+        color: #fff;
+    }
+   
 }
