@@ -58,9 +58,10 @@
               orçamento e o cronograma do projeto.
               
             </p>
-            <form action="https://formsubmit.co/hubertweb3@gmail.com" method="POST" class="formulario">
+            <form action="https://api.web3forms.com/submit" method="POST" class="formulario">
               <div class='secao-input-text'>
                 <label id="nome-empresa" for="nome-empresa">Nome da empresa</label>
+                <input type="hidden" name="access_key" value="a0d1a7db-27da-47e3-bcce-8c0bd744b96f">
                 <input id="nome-empresa" placeholder="Nome fantasia" type="text" name="nome-empresa" required />
              
               
@@ -150,15 +151,15 @@
                   </select>
                 </div>
                 <div>
-                  <label id="titulo-label" for="objetivo"
+                  <label id="titulo-label" for="objetivo-principal"
                     >Defina o principal objetivo do novo website?</label
                   >
-                  <select id="objetivo" name="objetivo" required>
+                  <select id="objetivo-principal" name="objetivo-principal" required>
                     <option selected></option>
                     <option value="Construir-confiança">
                       Construir confiança
                     </option>
-                    <option value="Garantir-experiência">
+                    <option value="Garantir-experiencia">
                       Garantir experiência
                     </option>
                     <option value="Apresentar-oferta">Apresentar oferta</option>
@@ -172,10 +173,10 @@
                       Divulgar conhecimento
                     </option>
                     <option value="Criar-autoridade">Criar autoridade</option>
-                    <option value="Mostrar-portfólio">Mostrar portfólio</option>
-                    <option value="Informar-público">Informar público</option>
-                    <option value="Atrair-tráfego">Atrair tráfego</option>
-                    <option value="Engajar-audiência">Engajar audiência</option>
+                    <option value="Mostrar-portfolio">Mostrar portfólio</option>
+                    <option value="Informar-publico">Informar público</option>
+                    <option value="Atrair-trafego">Atrair tráfego</option>
+                    <option value="Engajar-audiencia">Engajar audiência</option>
                     <option value="Educar-mercado">Educar mercado</option>
                     <option value="Fidelizar-clientes">
                       Fidelizar clientes
@@ -458,29 +459,7 @@
               </div>
                <!-- fim estilos do site -->
 
-              <!-- seletor de cores -->
-              <div class="secao-input-text">
-              <label for="color" id="titulo-label">Selecione as cores para o seu site:</label>              </label>
-              <div class="color-picker">
-                <div class="color-selector">
-                  <label for="color1"> cor 1: Backgound</label>
-                  <input type="color" id="color1" value="#000000">
-                </div>
-                <div class="color-selector">
-                  <label for="color2">Cor 2: Títulos</label>
-                  <input type="color" id="color2" value="#000000">
-                </div>
-                <div class="color-selector">
-                  <label for="color3">Cor 3: Textos</label>
-                  <input type="color" id="color3" value="#000000">
-                </div>
-                <div class="color-selector">
-                  <label for="color4">Cor 4: Menus/links/botões/outros</label>
-                  <input type="color" id="color4" value="#000000">
-                </div>
-              </div>
-              </div>
-             <!-- fim seletor de cores -->
+             
 
                <!-- funcionalidades do site -->
                <div class="secao-input-text">
@@ -565,7 +544,7 @@
                   
                   <div>
                     <input type="checkbox" id="servicos" name="pageType" value="Serviços">
-                    <label for="servicos">Serviços</label>
+                    <label for="servicos">Serviços/<br>Produtos</label>
                   </div>
                   
                   <div>
@@ -589,8 +568,8 @@
                   </div>
 
                   <div>
-                    <input type="checkbox" id="termos-uso" name="pageType" value="Termos de Uso">
-                    <label for="termos-uso">Termos de Uso</label>
+                    <input type="checkbox" id="pag-depoimentos" name="pageType" value="pag-depoimentos">
+                    <label for="pag-depoimentos">Depoimentos/<br>Prova social</label>
                   </div>
                   </div>
                   <div class="radio"> 
@@ -661,7 +640,7 @@
                 <input
                 type="checkbox"
                 id="pdf"
-                name="pdf"
+                name="site_content"
                 value="pdfs"
               />
               <label for="pdf">PDF</label><br />
@@ -670,7 +649,7 @@
                 <input
                 type="checkbox"
                 id="audio"
-                name="audio"
+                name="site_content"
                 value="audio"
               />
               <label for="audio">Audio</label><br />
@@ -679,7 +658,7 @@
                 <input
                 type="checkbox"
                 id="outros-tipos"
-                name="outros-tipos"
+                name="site_content"
                 value="outros-tipos"
               />
               <label for="outros-tipos">outros-tipos</label><br />
@@ -693,39 +672,39 @@
               <div class="radio">
                 <div>
                   <input
-                    id="piscina"
+                    id="compartilhada"
                     type="checkbox"
-                    name="preferencias[]"
-                    value="piscina"
+                    name="prefere-servidor"
+                    value="compartilhada"
                   />
-                  <label for="piscina">Compartilhada</label>
+                  <label for="compartilhada">Compartilhada</label>
                 </div>
                 <div>
                   <input
-                    id="wifi"
+                    id="cloud"
                     type="checkbox"
-                    name="preferencias[]"
-                    value="wifi"
+                    name="prefere-servidor"
+                    value="cloud"
                   />
-                  <label for="wifi">Cloud</label>
+                  <label for="cloud">Cloud</label>
                 </div>
                 <div>
                   <input
-                    id="garagem"
+                    id="vps"
                     type="checkbox"
-                    name="preferencias[]"
-                    value="garagem"
+                    name="prefere-servidor"
+                    value="vps"
                   />
-                  <label for="garagem">VPS</label>
+                  <label for="vps">VPS</label>
                 </div>
                 <div>
                   <input
-                    id="suite"
+                    id="tipo-servidor"
                     type="checkbox"
-                    name="preferencias[]"
-                    value="suite"
+                    name="prefere-servidor"
+                    value="aceita-sugestao"
                   />
-                  <label for="suite">Aceito sugestões</label>
+                  <label for="tipo-servidor">Aceito sugestões</label>
                 </div>
               </div>
               </div>
