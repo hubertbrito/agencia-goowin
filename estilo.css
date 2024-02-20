@@ -1,0 +1,171 @@
+body {
+  background-color: #01080E;
+  color: #fff;
+  font-family: 'Inter';
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header h3 {
+  color: #e67e22;
+}
+
+.div-logo-topo {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone-logo-banner {
+  width: 33px;
+  margin-bottom: -19px;
+}
+
+#topo-logo {
+  width: 150px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px 20px 80px;
+}
+
+.container-readLine,
+.container-form {
+  flex: 1; /* Ajuste para ocupar espaços iguais */
+  padding: 10px 20px;
+}
+
+#hero h2 {
+  color: #e74c3c;
+  font-size: 3em;
+  font-family: 'Chakra Petch';
+}
+
+#hero p {
+  font-size: 22px;
+}
+
+.cartao {
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.servicos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permite que os itens se ajustem à tela */
+}
+
+#servicos {
+  display: flex;
+  flex-direction: column;
+}
+
+#servicos h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.cartao h4 {
+  color: #f1c40f;
+}
+
+#portfolio {
+  text-align: center;
+}
+
+.projeto {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+  text-align: center;
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projeto a {
+  display: block;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input, select {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+.social img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 580px) {
+
+  #hero {
+    flex-direction: column;
+  }
+  
+  .container-readLine, .container-form {
+    width: 100%;
+  }
+  
+  #hero h2 {
+    font-size: 2em; /* Tamanho do texto ajustado para telas menores */
+  }
+  
+  #hero p {
+    font-size: 18px; /* Tamanho do texto ajustado para telas menores */
+  }
+  
+  .servicos, .cartao {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .projeto {
+    width: 100%;
+  }
+  
+}

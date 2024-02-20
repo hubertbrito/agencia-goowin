@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nome da Agência - Criação de Sites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+ </head>
+
+<body>
+
+  <header>
+    <div class="div-logo-topo">
+      <div>
+        <img class="icone-logo-banner" src="assets/padrao02.png" alt="">
+      </div>
+        <img src="assets/logo-clara-bola-roxa.png" alt="Logo" id="topo-logo">
+    </div>
+  </header>
+
+  <main>
+
+    <section id="hero">
+    <div class="container-readLine">
+      <h2>Construímos seu site e  te judamos a alcançar mais clientes com estratégias e campanhas de marketing digital</h2>
+      <p>Sites profissionais, rápidos e dentro do seu orçamento</p>
+    </div>
+   
+    <div class="container-form" >
+        <h3>Orçamento sem compromisso</h3>  
+        <form>
+          <input type="text" id="nome" placeholder="Nome">
+          <input type="email" id="email" placeholder="E-mail"> 
+          <input type="tel" id="telefone" placeholder="Telefone">
+    
+          <select id="servico" class="servico">
+            <option>Selecione o serviço</option>
+            <option>Criação de Site</option>
+            <option>Reformulação de Site</option>
+            <option>E-commerce</option>
+          </select>
+    
+          <button type="button" onclick="enviarFormulario()">Solicitar Orçamento</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div>
+        <h3>Nossos principais serviços</h3>
+      </div>
+     
+     <div class="servicos">
+      <div class="cartao">
+        <h4>Criação de sites responsivos com WordPress</h4>
+        <p>Desenvolvemos sites modernos e otimizados para todos os dispositivos.</p>  
+      </div>
+
+      <div class="cartao"> 
+        <h4>Sites personalizados com HTML/CSS</h4>
+        <p>Criação de sites sob medida de acordo com a sua necessidade.</p>
+      </div>
+
+      <div class="cartao">
+        <h4>Estratégias de Marketing Digital</h4>
+        <p>Impulsionamos o seu negócio online com tráfego qualificado.</p>
+      </div>
+     </div>
+    </section>
+
+    <section id="portfolio">
+      <h3>Nossos casos de sucesso</h3>
+      <div class="projeto">
+        <img src="site1.jpg">
+        <a href="#">Saiba mais</a>  
+      </div>
+
+      <div class="projeto">
+        <img src="site2.jpg">
+        <a href="#">Saiba mais</a>
+      </div>
+
+      <div class="projeto">
+        <img src="site3.jpg"> 
+        <a href="#">Saiba mais</a>
+      </div>
+    </section>
+
+  </main>
+  
+  <footer>
+    <p>Contato: (11) 1111-1111 / endereco@email.com</p>
+
+    <div class="social">
+      <img src="facebook.png">
+      <img src="instagram.png">
+      <img src="linkedin.png">  
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
