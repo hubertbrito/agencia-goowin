@@ -1,202 +1,76 @@
+/* style.css */
 body {
-  background-color: #01080E;
-  color: #fff;
-  font-family: 'Inter';
-}
-
-header {
+  font-family: Arial, sans-serif;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-header h3 {
-  color: #e67e22;
-}
-
-.div-logo-topo {
-  display: flex;
-  gap: 4px;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000000; /* Fundo preto */
 }
 
-.icone-logo-banner {
-  width: 33px;
-  margin-bottom: -19px;
-}
-
-#topo-logo {
-  width: 150px;
-}
-
-#hero {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  padding: 10px 20px 80px;
-}
-
-.container-readLine,
-.container-form {
-  flex: 1; /* Ajuste para ocupar espaços iguais */
-  padding: 10px 20px;
-}
-
-#hero h2 {
-  color: #e74c3c;
-  font-size: 3em;
-  font-family: 'Chakra Petch';
-}
-
-#hero p {
-  font-size: 22px;
-}
-
-.cartao {
-  background-color: #34495e;
-  padding: 20px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.servicos {
+.container {
+  width: 100vw;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Permite que os itens se ajustem à tela */
+  gap: 20px;
 }
 
-#servicos {
-  display: flex;
-  flex-direction: column;
+.left, .right {
+  width: 50%;
+  flex: 1;
   padding: 20px;
-}
-
-#servicos h3 {
-  width: 100%;
   text-align: center;
 }
 
-.cartao h4 {
-  color: #f1c40f;
-}
-.cartao {
-  width: 33%;
+.left {
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Letras brancas */
 }
 
-#portfolio {
-  text-align: center;
+.right {
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Letras brancas */
 }
 
-.projeto {
-  display: inline-block;
-  width: 30%;
-  margin: 0 1.5%;
-  text-align: center;
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.projeto img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.projeto a {
-  display: block;
-  background-color: #e67e22;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-input, select {
-  width: 100%;
-  display: block;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: none;
-}
-
-form button {
-  background-color: #e67e22;
-  color: #fff;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1em;
-}
-
-footer {
-  text-align: center;
-  margin-top: 50px;
-}
-
-footer p {
+p {
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
-.social img {
-  width: 40px;
-  margin: 0 10px;
+input, button {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-  #hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px; /* Ajuste no preenchimento para dispositivos móveis */
-  }
-
-  .container-readLine,
-  .container-form {
-    width: 100%; /* Ocupa a largura total em dispositivos móveis */
-    height: auto; /* Altura automática para se ajustar ao conteúdo */
-    padding: 20px 0; /* Aumenta o preenchimento vertical para espaço extra */
-    flex: 1; /* Ajuste para ocupar espaços iguais */
-  }
-
-  #hero h2 {
-    font-size: 2em; /* Tamanho de fonte ajustado para telas menores */
-    margin: 10px 0; /* Espaço acima e abaixo do título */
-  }
-
-  #hero p,
-  #hero h3 {
-    font-size: 1em; /* Tamanho de fonte ajustado para telas menores */
-  }
-
-  /* Outros ajustes de estilo para responsividade podem ser adicionados aqui */
-  
-  /* Ajustes para os cartões de serviços */
-  .servicos {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .cartao {
-    width: auto; /* Ocupa a largura necessária baseada no conteúdo */
-    margin: 10px 0; /* Espaço acima e abaixo de cada cartão */
-  }
-  
-  /* Ajustes para projetos no portfólio */
-  .projeto {
-    width: 100%; /* Ocupa a largura total em dispositivos móveis */
-    margin: 10px 0; /* Espaço acima e abaixo de cada projeto */
-  }
-  
-  /* Outros ajustes de estilo para responsividade podem ser adicionados aqui */
+button {
+  background-color: #007bff; /* Azul */
+  color: #ffffff; /* Letras brancas */
+  border: none;
+  cursor: pointer;
 }
 
-/* Estilos adicionais para dispositivos ainda menores (opcional) */
-@media (max-width: 480px) {
-  #hero h2 {
-    font-size: 1.75em; /* Tamanho de fonte reduzido para dispositivos muito pequenos */
+@media screen and (max-width: 780px){
+  .container {
+      width: 100vw;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      justify-content: center;
+      
+
   }
-  
-  /* Ajustes adicionais conforme necessário */
+  .left, .right {
+      width: 90%;
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+  }
 }
+
