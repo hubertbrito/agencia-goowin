@@ -112,14 +112,20 @@ function enviarParaWhatsApp() {
     var servico = document.getElementById("servico").value;
     var mensagem = document.getElementById("mensagem").value;
 
+    if (!nome || !email || !telefone || !nomeEmpresa || !servico || !mensagem) {
+      alert('Todos os campos são obrigatórios!');
+      return;
+    }
+
+
     // Substitua o número abaixo pelo número de WhatsApp da sua empresa
     var numeroWhatsApp = "5521970267055";
 
-    var textoMensagem = "Nome: " + nome + "%0A" +
-                        "Email: " + email + "%0A" +
-                        "Telefone: " + telefone + "%0A" +
-                        "Nome da Empresa: " + nomeEmpresa + "%0A" +
-                        "Serviço: " + servico + "%0A" +
+    var textoMensagem = "Nome: " + nome + "%0A" + " " +
+                        "Email: " + email + "%0A" +" " +
+                        "Telefone: " + telefone + "%0A" + " " +
+                        "Nome da Empresa: " + nomeEmpresa + "%0A" + " " +
+                        "Serviço: " + servico + "%0A" + " " +
                         "Mensagem: " + mensagem;
 
     var linkWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroWhatsApp + "&text=" + textoMensagem;
