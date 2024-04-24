@@ -765,7 +765,7 @@ textarea {width: 100%;
 .rodape-parallax5 {
   display: flex;
   margin-top: 50px;  
-  height: 80%;
+  height: 100%;
   background-image: url("assets/rodape.png");
   position: relative;
   background-position: center;
@@ -800,11 +800,12 @@ textarea {width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5px 0;
+  margin: 0px 0px 30px;
 }
 .rodape-conteudo ul {
   list-style-type: none; /* Remove os marcadores da lista */
 }
+
 .rodape-conteudo a {
   display: flex;
   align-items: center;
@@ -821,7 +822,13 @@ textarea {width: 100%;
   margin: 0 0 5px 0;
   font-size: 18px;
 }
-
+.titulo-contato-rodape{
+  padding-top: 87px;
+  margin-top: 20px;
+}
+.titulo-sociais-rodape{
+  margin-top: -40px;
+}
 .rodape-conteudo img {
   width: 18px;
 }
@@ -829,6 +836,7 @@ textarea {width: 100%;
   color: #F6F4EC;
   font-size: 14px;
   margin: 0 0 0 10px;
+  padding: 0;
 }
 .limite-largura {
   width: 100%;
@@ -956,6 +964,9 @@ border-radius: 4px;
   color: #029e3b;
   font-weight: 900;
   box-shadow: 2px 2px 20px #5fe690;
+}
+.icon-google{
+  color: #ffffff;
 }
  
 
