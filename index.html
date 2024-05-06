@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon187.png" />
 
     <link rel="stylesheet" href="index.css" />
-    <script defer src="app.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -28,6 +28,9 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+
     <title>GooWin Websites & Identidade Visual</title>
   </head>
   <body>
@@ -225,9 +228,12 @@
             </div>
           </label>
           <label>
-            Telefone:
+            Telefone celular<br />
+            <small>Formato: (xx) xxxxx-xxxx</small>
             <div class="contain-inputtext">
-              <input type="tel" name="telefone" id="telefone" required />
+              <!-- No seu HTML -->
+            <input type="tel" name="telefone" id="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required />
+
             </div>
           </label>
           <label>
@@ -262,7 +268,7 @@
             <textarea name="mensagem" id="mensagem" required></textarea>
            </div>
           </label>
-          <button id="buttonEnviar" type="submit" value="Enviar" onclick="enviarParaWhatsApp()">Enviar</button>
+          <button id="buttonEnviar" type="button" onclick="enviarParaWhatsApp()">Enviar</button>
         </form>
       </div>
     </section>

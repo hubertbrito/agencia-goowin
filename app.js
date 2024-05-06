@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   var themeButton = document.getElementById('theme-button');
 
-  // Defina o tema escuro como padrão
-  if (!localStorage.getItem('theme')) {
+  // Carregue o tema preferido do localStorage
+  var preferredTheme = localStorage.getItem('theme');
+  if (preferredTheme === 'light') {
+      document.body.classList.remove('dark-mode');
+  } else {
       document.body.classList.add('dark-mode');
   }
 
@@ -14,33 +17,26 @@ document.addEventListener('DOMContentLoaded', function() {
       alterarTema(); // Atualize as imagens e o texto no botão
   });
 
-  // Carregue o tema preferido do localStorage
-  var preferredTheme = localStorage.getItem('theme');
-  if (preferredTheme === 'light') {
-      document.body.classList.remove('dark-mode');
-  } else {
-      document.body.classList.add('dark-mode');
-  }
   alterarTema(); // Atualize as imagens e o texto no botão
 });
 
 function alterarTema() {
   var button = document.getElementById('theme-button');
   var image = document.getElementById('theme-icon');
-  var logo = document.getElementById('topo-logo');
+  var logo = document.getElementById('topo-logo'); // Adicionei esta linha para obter a referência à logo
   var text = document.getElementById('theme-text');
   var menu = document.getElementById('header');
 
   if (document.body.classList.contains('dark-mode')) {
       button.className = 'modo-escuro';
       image.src = 'assets/sun.png';
-      logo.src = 'assets/logo-clara-bola-roxa.png';
+      logo.src = 'assets/logo-clara-bola-roxa.png'; // Troquei a logo para o modo claro
       text.textContent = 'Light';
       menu.className = 'menu-dark';
   } else {
       button.className = 'modo-claro';
       image.src = 'assets/moon.png';
-      logo.src = 'assets/logo-preta-bola-roxa.png';
+      logo.src = 'assets/logo-preta-bola-roxa.png'; // Troquei a logo para o modo escuro
       text.textContent = 'Dark';
       menu.className = 'menu-light';
   }
@@ -103,32 +99,3 @@ btnMenu.addEventListener("touchstart", handleButtonClick);
 
 
 
-//form que leva pro whatsapp
-function enviarParaWhatsApp() {
-    var nome = document.getElementById("nome").value;
-    var email = document.getElementById("email").value;
-    var telefone = document.getElementById("telefone").value;
-    var nomeEmpresa = document.getElementById("nomeEmpresa").value;
-    var servico = document.getElementById("servico").value;
-    var mensagem = document.getElementById("mensagem").value;
-
-    if (!nome || !email || !telefone || !nomeEmpresa || !servico || !mensagem) {
-      alert('Todos os campos são obrigatórios!');
-      return;
-    }
-
-
-    // Substitua o número abaixo pelo número de WhatsApp da sua empresa
-    var numeroWhatsApp = "5521970267055";
-
-    var textoMensagem = "Nome: " + nome + "%0A" + " " +
-                        "Email: " + email + "%0A" +" " +
-                        "Telefone: " + telefone + "%0A" + " " +
-                        "Nome da Empresa: " + nomeEmpresa + "%0A" + " " +
-                        "Serviço: " + servico + "%0A" + " " +
-                        "Mensagem: " + mensagem;
-
-    var linkWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroWhatsApp + "&text=" + textoMensagem;
-
-    window.open(linkWhatsApp, '_blank');
-}
