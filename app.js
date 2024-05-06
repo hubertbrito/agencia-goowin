@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Carregue o tema preferido do localStorage
   var preferredTheme = localStorage.getItem('theme');
-  if (preferredTheme === 'light') {
+  if (preferredTheme !== 'dark') {
+      // Sempre defina o tema como "light" no localStorage
+      localStorage.setItem('theme', 'light');
       document.body.classList.remove('dark-mode');
   } else {
       document.body.classList.add('dark-mode');
@@ -12,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   themeButton.addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
 
+      // Sempre atualize o valor no localStorage
       localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
 
       alterarTema(); // Atualize as imagens e o texto no botão
@@ -23,24 +26,25 @@ document.addEventListener('DOMContentLoaded', function() {
 function alterarTema() {
   var button = document.getElementById('theme-button');
   var image = document.getElementById('theme-icon');
-  var logo = document.getElementById('topo-logo'); // Adicionei esta linha para obter a referência à logo
+  var logo = document.getElementById('topo-logo');
   var text = document.getElementById('theme-text');
   var menu = document.getElementById('header');
 
   if (document.body.classList.contains('dark-mode')) {
       button.className = 'modo-escuro';
       image.src = 'assets/sun.png';
-      logo.src = 'assets/logo-clara-bola-roxa.png'; // Troquei a logo para o modo claro
+      logo.src = 'assets/logo-clara-bola-roxa.png';
       text.textContent = 'Light';
       menu.className = 'menu-dark';
   } else {
       button.className = 'modo-claro';
       image.src = 'assets/moon.png';
-      logo.src = 'assets/logo-preta-bola-roxa.png'; // Troquei a logo para o modo escuro
+      logo.src = 'assets/logo-preta-bola-roxa.png';
       text.textContent = 'Dark';
       menu.className = 'menu-light';
   }
 }
+
 
   
   
